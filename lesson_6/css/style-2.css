@@ -1,0 +1,86 @@
+body {
+   font-size: 16px;
+   line-height: 1.5;
+   background-color: #000000;
+   font-family: 'Permanent Marker', cursive;
+}
+
+.wrapper {
+   padding: 60px 0;
+}
+
+/* === */
+.container-top {
+   margin-bottom: 180px;
+}
+
+.container-top,
+.container-bottom {
+   padding: 0 15px;
+}
+
+.container-top-title {
+   font-family: 'Coiny', cursive;
+   color: #000000;
+   font-size: 120px;
+   text-align: center;
+   text-shadow: 0px 0px 2px #000000, -5px -5px 10px #FF0000, -5px 5px 10px #00FF00, 5px 5px 10px #FF00FF, 5px -5px 10px #FFFF00;
+}
+
+/* === */
+.container-bottom {
+   max-width: 1300px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* = */
+.card-content {
+   display: inline-block;
+   margin-bottom: 30px;
+}
+
+.card-content-2 {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+
+.card-wrapper {
+   width: 300px;
+   height: 400px;
+   margin: 0 auto;
+   padding: 10px;
+   overflow: hidden;
+   box-shadow: -110px -145px 200px -60px #ff000067, 0px -155px 200px -60px rgba(255, 68, 0, 0.397), 160px 0px 200px -60px #00ff0075, 0px 175px 290px -60px #892be271, -100px 125px 200px -60px #ff00ff6c, 110px 125px 200px -60px #ffff0073, 110px -125px 200px -60px #acff2f80;
+}
+
+.card-body {
+   padding: 10px;
+   width: 100%;
+   height: 100%;
+   background-color: #000000;
+   box-shadow: -150px -200px 50px -30px #FF0000, 0px -205px 50px -80px OrangeRed, 160px 265px 50px -30px #00FF00, 60px 265px 50px -30px #8A2BE2, -160px 125px 50px -20px #FF00FF, 110px -225px 50px -30px #FFFF00, 150px -0px 50px -30px #ADFF2F;
+}
+
+.card-body-title {
+   color: #fff;
+   text-align: center;
+   font-weight: 700;
+   font-size: 65px;
+   text-transform: uppercase;
+}
+
+.card-body-title span {
+   display: inline-block;
+   margin-left: -3px;
+   text-shadow: -5px 0px 15px #000, -5px 0px 15px #000, -5px 0px 15px #000, -5px 0px 15px #000;
+}
+
+.card-body-image {
+   margin: 0 -10px;
+}
+
+.card-body-image img {
+   width: 100%;
+}
