@@ -1,0 +1,38 @@
+/*--------- Підключення шрифтів ---------------- */
+
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+		url('../fonts/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../fonts/Larsseit-Bold.woff2') format('woff2'),
+		url('../fonts/Larsseit-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../fonts/Larsseit.woff2') format('woff2'),
+		url('../fonts/Larsseit.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'MarckScript';
+	src: url('../fonts/MarckScript-Regular.woff2') format('woff2'),
+		url('../fonts/MarckScript-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

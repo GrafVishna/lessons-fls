@@ -1,0 +1,141 @@
+body {
+   background-color: PapayaWhip;
+   color: SaddleBrown;
+   font-family: 'Larsseit';
+   font-size: 18px;
+   line-height: 25px;
+}
+
+p {
+   margin-bottom: 15px;
+}
+
+._title {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.wrapper {
+   padding-left: 30px;
+   padding-right: 30px;
+   max-width: 1000px;
+   margin: 0 auto;
+   background-color: Moccasin;
+}
+
+.header {
+   padding-top: 30px;
+   padding-bottom: 15px;
+}
+
+.header-title {
+   text-align: center;
+   font-size: 55px;
+   color: Chocolate;
+   font-family: 'MarckScript';
+   margin-bottom: 50px;
+   line-height: 45px;
+}
+
+.header-title h1 {
+   margin-bottom: 20px;
+}
+
+.header-title .header-menu a {
+   font-size: 22px;
+   font-family: 'Larsseit';
+   margin-left: 10px;
+   margin-right: 10px;
+   font-weight: bold;
+}
+
+.header-title .header-menu a span {
+   color: SaddleBrown;
+}
+
+.header-author {
+   margin-bottom: 20px;
+}
+
+.header-subtitle p {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.header-author span {
+   font-weight: bold;
+   color: DarkOrange;
+}
+
+.content {
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.content-img,
+.content-recipe-img-description {
+   margin-bottom: 15px;
+}
+
+.content-img img,
+.content-recipe-img img {
+   width: 100%;
+}
+
+.content-img-description,
+.content-recipe-img-description {
+   background-color: MintCream;
+   text-align: center;
+   color: Peru;
+   padding: 7px 0;
+}
+
+.content-history span {
+   color: OrangeRed;
+}
+
+.content-recipe {
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.content-recipe-info .text-italic {
+   color: OrangeRed;
+}
+
+.content-recipe-ingredients {
+   margin-bottom: 15px;
+}
+
+.content-recipe-ingredients {
+   color: OrangeRed;
+}
+
+.content-recipe-ingredients .content-recipe-ingredient {
+   padding-left: 20px;
+}
+
+.footer {
+   padding-top: 15px;
+   padding-bottom: 30px;
+}
+
+.footer-links {
+   margin-bottom: 30px;
+}
+
+.footer-links a {
+   color: Brown;
+}
+
+.top-btn {
+   text-align: center;
+}
+
+.top-btn a {
+   font-size: 20px;
+   color: Brown;
+}
+
+.footer-link {}
