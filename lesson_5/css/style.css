@@ -1,0 +1,143 @@
+body {
+   background-color: #000000;
+   color: #ffffff;
+   line-height: 1.7;
+   font-size: 18px;
+   font-family: 'Bitter', serif;
+   letter-spacing: 0.5px;
+}
+
+* p {
+   margin-bottom: 30px;
+}
+
+* span {
+   font-family: "Cinzel", serif;
+   color: #faebce;
+   font-size: 18px;
+}
+
+* img {
+   width: 100%;
+}
+
+._title {
+   font-family: "CharlemagneC", serif;
+   font-size: 30px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+
+._title span {
+   color: #FEE8B7;
+   font-size: 35px;
+}
+
+._content-block {
+   padding-left: 20px;
+   margin-bottom: 50px;
+}
+
+._image {
+   padding: 0 10% 0 10%;
+   margin-bottom: 50px;
+}
+
+/* =================== */
+.header__title-img {
+   padding-top: 130px;
+}
+
+.header__title h1 {
+   font-family: 'CharlemagneC';
+   font-weight: 400;
+   font-size: 145px;
+   line-height: 1.2;
+   text-align: center;
+   color: #FEE8B7;
+   text-transform: uppercase;
+   letter-spacing: 40px;
+   margin-top: -170px;
+   margin-bottom: 20px;
+   text-shadow: 10px 10px 15px #000000, -20px -20px 70px rgba(255, 231, 183, 0.5);
+   word-spacing: -60px;
+}
+
+.header__menu {
+   font-family: 'CharlemagneC', serif;
+   color: #FEE8B7;
+   text-align: center;
+}
+
+.header__menu-link {
+   margin: 0 10px;
+   text-transform: uppercase;
+   font-size: 20px;
+   text-shadow: 0px 0px 20px rgba(255, 231, 183, 1);
+   line-height: 1.3;
+   white-space: nowrap;
+   padding: 5px 0;
+}
+
+.header__bg {
+   margin-bottom: 60px;
+}
+
+/* ================== */
+
+.content__container,
+.footer__container {
+   padding: 0 15%;
+}
+
+.biography,
+.history,
+.popular,
+.path,
+.year-2000x,
+.now {
+   padding: 0 3%;
+   margin-bottom: 80px;
+}
+
+.biography {
+   border: 5px solid #302319;
+   background-color: #0A0603;
+   padding: 30px 3%;
+}
+
+/* ========================== */
+.footer__decor-line {
+   margin-bottom: -3.5%;
+}
+
+.footer__decor-line img {
+   width: 100%;
+}
+
+.footer__decor {
+   padding: 0 25%;
+   /* margin-bottom: 50px; */
+}
+
+.footer__decor img {
+   width: 100%;
+}
+
+.footer__copy {
+   font-family: 'bitter', serif;
+   text-align: center;
+   padding: 1% 10px 1% 10px;
+   font-style: italic;
+}
+
+.footer__copy span {
+   font-family: "CharlemagneC", serif;
+   font-style: normal;
+   color: #FEE8B7;
+   padding-left: 10px;
+   padding-right: 10px;
+}
