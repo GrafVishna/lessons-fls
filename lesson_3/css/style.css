@@ -1,0 +1,27 @@
+body {
+   background-color: MistyRose;
+}
+
+body h1, h2, h3 {
+   color: OrangeRed;
+}
+
+.content p {
+   color: Maroon;
+}
+
+.content-menu-link {
+   color: DeepPink;
+}
+
+.content-menu-link a {
+   color: OrangeRed;
+}
+
+.content-article-list-item {
+   color: Sienna;
+}
+
+.footer-btn-up {
+   color: Maroon;
+}
