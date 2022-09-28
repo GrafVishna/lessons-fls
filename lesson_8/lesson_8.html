@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/reset.css">
+      <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+      <link rel="stylesheet" href="css/style-2.css">
+      <title>Lesson 8</title>
+   </head>
+   <body id="body">
+      <div class="wrapper">
+         <header class="header">
+            <div class="header__container">
+               <h1 class="title">Урок 8. Псевдоелементи та псевдокласи.</h1>
+            </div>
+         </header>
+         <main class="content">
+            <div class="class">
+               <div class="class__container">
+                  <!--  -->
+                  <div class="theme theme-1">
+                     <h2 class="theme__title">Псевдокласи стану</h2>
+                     <div class="theme__body">
+                        <!--  -->
+                        <h4 class="theme__info">:hover Звернення до елемента у стані "при наведенні миші" Застосовується до будь-якого елемента</h4>
+                        <div class="theme__links-line">
+                           <a href="#" class="hover">Hover</a>
+                           <a href="#" class="hover">Hover</a>
+                           <a href="#" class="hover">Hover</a>
+                           <a href="#" class="hover">Hover</a>
+                           <a href="#" class="hover">Hover</a>
+                        </div>
+                        <!--  -->
+                        <h4 class="theme__info">:active Звернення до елемента у стані "при натиснутій клавіші миші"</h4>
+                        <div class="theme__links-line">
+                           <a href="#" class="active">Active</a>
+                           <a href="#" class="active">Active</a>
+                           <a href="#" class="active">Active</a>
+                           <a href="#" class="active">Active</a>
+                           <a href="#" class="active">Active</a>
+                        </div>
+                        <!--  -->
+                        <h4 class="theme__info">:visited Звернення до елемента у стані "відвіданого посилання" обмежена кількість свастивостей</h4>
+                        <div class="theme__links-line">
+                           <a href="https://cssgradient.io/" target="_blank" class="visited">Visited</a>
+                           <a href="https://realfavicongenerator.net/" target="_blank" class="visited">Visited</a>
+                           <a href="https://animista.net/play/basic/shadow-drop/shadow-drop-center" target="_blank" class="visited">Visited</a>
+                           <a href="https://www.pngwing.com/ru" target="_blank" class="visited">Visited</a>
+                           <a href="https://www.svgrepo.com/" target="_blank" class="visited">Visited</a>
+                        </div>
+                        <!--  -->
+                        <h4 class="theme__info">:focus Звернення до елементу у стані "фокусу"</h4>
+                        <div class="theme__links-line">
+                           <a href="#" class="focus">focus</a>
+                           <a href="#" class="focus">focus</a>
+                           <a href="#" class="focus">focus</a>
+                           <a href="#" class="focus">focus</a>
+                           <a href="#" class="focus">focus</a>
+                        </div>
+                        <!--  -->
+                        <h4 class="theme__info">:target Звернення до елемента у стані "ефекту від посилання з іншого об'єкту""</h4>
+                        <div class="theme__links-line">
+                           <a id="t-1" href="#body" class="target">target</a>
+                           <a id="t-2" href="#" class="target">target</a>
+                        </div>
+                        <!--  -->
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="theme theme-2">
+                     <h2 class="theme__title">Псевдокласи положення у коді</h2>
+                     <div class="theme__colors">
+                        <div class="theme__color-div">- DIV</div>
+                        <div class="theme__color-p">- P</div>
+                        <div class="theme__color-select">- Обʼєкт до якого звертаємося</div>
+                     </div>
+                     <div class="theme__body">
+                        <div class="theme__block">
+                           <p class="theme__info">:first-child Звернення до першого елементу в коді</p>
+                           <div class="theme__block-items">
+                              <div class="theme__block-item block-item-first"></div>
+                              <div class="theme__block-item block-item-first"></div>
+                              <div class="theme__block-item block-item-first"></div>
+                              <div class="theme__block-item block-item-first"></div>
+                              <div class="theme__block-item block-item-first"></div>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <p class="theme__info">:first-of-type Звернення до першого вказаного об'єкту в коді (div)</p>
+                           <div class="theme__block-items block-items-first-type">
+                              <p class="theme__block-item block-item-first-type"></p>
+                              <div class="theme__block-item block-item-first-type"></div>
+                              <div class="theme__block-item block-item-first-type"></div>
+                              <div class="theme__block-item block-item-first-type"></div>
+                              <div class="theme__block-item block-item-first-type"></div>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <p class="theme__info">:last-child Звернення до останього елементу в коді</p>
+                           <div class="theme__block-items">
+                              <div class="theme__block-item block-item-last"></div>
+                              <div class="theme__block-item block-item-last"></div>
+                              <div class="theme__block-item block-item-last"></div>
+                              <div class="theme__block-item block-item-last"></div>
+                              <div class="theme__block-item block-item-last"></div>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <p class="theme__info">:last-of-type Звернення до останього вказаного об'єкту в коді (div)</p>
+                           <div class="theme__block-items block-items-last-type">
+                              <div class="theme__block-item block-item-last-type"></div>
+                              <div class="theme__block-item block-item-last-type"></div>
+                              <div class="theme__block-item block-item-last-type"></div>
+                              <div class="theme__block-item block-item-last-type"></div>
+                              <p class="theme__block-item block-item-last-type"></p>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <p class="theme__info">:nth-child Звернення до конкретного елементу в коді</p>
+                           <div class="theme__block-items block-items-nth">
+                              <div class="theme__block-item block-item-nth"></div>
+                              <div class="theme__block-item block-item-nth"></div>
+                              <div class="theme__block-item block-item-nth"></div>
+                              <div class="theme__block-item block-item-nth"></div>
+                              <div class="theme__block-item block-item-nth"></div>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <p class="theme__info">:nth-child(odd) - через один не парні</p>
+                           <div class="theme__block-items">
+                              <div class="theme__block-item block-item-odd"></div>
+                              <div class="theme__block-item block-item-odd"></div>
+                              <div class="theme__block-item block-item-odd"></div>
+                              <div class="theme__block-item block-item-odd"></div>
+                              <div class="theme__block-item block-item-odd"></div>
+                           </div>
+                           <p class="theme__info">:nth-child(even) - через один парні</p>
+                           <div class="theme__block-items">
+                              <div class="theme__block-item block-item-even"></div>
+                              <div class="theme__block-item block-item-even"></div>
+                              <div class="theme__block-item block-item-even"></div>
+                              <div class="theme__block-item block-item-even"></div>
+                              <div class="theme__block-item block-item-even"></div>
+                           </div>
+                        </div>
+                        <!--  -->
+                        <div class="theme__block">
+                           <h2 class="theme__title">Псевдоклас виключення</h2>
+                           <p class="theme__info">p:not(:last-child) Для усіх P окрім останього</p>
+                           <div class="theme__block-items block-items-l">
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                           </div>
+                           <p>p:not(:first-child) Для усіх P окрім першого</p>
+                           <div class="theme__block-items block-items-f">
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                              <p class="theme__block-item"></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+               </div>
+
+            </div>
+            <!--  -->
+            <div class="еlements">
+               <div class="elements__container">
+                  <div class="theme theme-3">
+                     <h2 class="theme__title">Псевдоелементи (:before, :after) - рядкові.</h2>
+                     <p class="theme__info">:After, добавляє елемент на початку.</p>
+                     <div class="theme__after"></div>
+                     <p class="theme__info">:Before, добавляє елемент в кінець.</p>
+                     <div class="theme__before"></div>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+   </body>
+</html>

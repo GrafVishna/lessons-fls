@@ -1,0 +1,279 @@
+[class *=__container] {
+   max-width: 1290px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+body {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   background-color: #292F36;
+   color: rgba(255, 255, 255, 0.6);
+   line-height: 1.5;
+   font-size: 18px;
+}
+
+body:not(:target) #t-1 {
+   display: inline-block;
+}
+
+body:not(:target) #t-2 {
+   display: none;
+}
+
+body:target #t-1 {
+   display: none;
+}
+
+body:target #t-2 {
+   display: inline-block;
+}
+
+body:target {
+   background-color: rgb(182, 182, 182);
+   color: #292F36;
+}
+
+body:target a {
+   border-color: #292F36;
+}
+
+body:target a:hover {
+   background-color: #292F36;
+   color: rgb(182, 182, 182);
+}
+
+body:target .theme__block-item {
+   background-color: #292F36;
+}
+
+body:target .theme__color-div::before {
+   background-color: #292F36;
+}
+
+body:target .theme__before {
+   background-color: #292F36;
+}
+
+body:target .theme__after {
+   background-color: #292F36;
+}
+
+body:target .visited:visited {
+   color: #ff2c2c;
+   border: 1px solid #ff2c2c;
+}
+
+.wrapper {
+   padding: 50px 0;
+}
+
+/* =============================== */
+
+.header {}
+
+.title {
+   font-size: 35px;
+   text-align: center;
+   margin-bottom: 30px;
+   font-weight: 700;
+}
+
+.content {}
+
+/* ================================== */
+
+.theme {
+   margin-bottom: 25px;
+}
+
+.theme-1 {}
+
+.theme-2 {}
+
+.theme-3 {}
+
+/* ================================== */
+
+
+.class {}
+
+.class:not(:last-child) {
+   margin-bottom: 50px;
+}
+
+.theme__title {
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 15px;
+}
+
+.theme__body {}
+
+.theme__info {
+   margin-bottom: 5px;
+}
+
+/* ========================================= */
+.theme__links-line {
+   padding: 5px 0;
+   margin-bottom: 25px;
+}
+
+.theme__links-line a {
+   display: inline-block;
+   text-align: center;
+   padding: 5px 15px;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   border-radius: 5px;
+}
+
+.theme__links-line a.target {
+   min-width: 200px;
+}
+
+.theme__links-line a:not(:last-child) {
+   margin-right: 20px;
+}
+
+.hover:hover {
+   background-color: rgba(255, 255, 255, 0.6);
+   color: #292F36;
+}
+
+.active:active {
+   background-color: rgba(255, 255, 255, 0.6);
+   color: #292F36;
+}
+
+.visited:visited {
+   color: #ffff00;
+   border: 1px solid #ffff00;
+}
+
+.focus:focus {
+   background-color: rgba(255, 255, 255, 0.6);
+   color: #292F36;
+   outline: none;
+}
+
+/* ================================= */
+
+.theme__block-items {
+   font-size: 0;
+   margin-bottom: 25px;
+}
+
+.theme__colors {
+   margin-bottom: 20px;
+}
+
+.theme__color-div::before,
+.theme__color-p::before,
+.theme__color-select::before {
+   content: '';
+   display: inline-block;
+   margin-right: 10px;
+   width: 20px;
+   height: 20px;
+   margin-bottom: -2px;
+}
+
+.theme__color-div::before {
+   background-color: rgb(182, 182, 182);
+}
+
+.theme__color-p::before {
+   background-color: #ffff00;
+}
+
+.theme__color-select::before {
+   background-color: #ff2c2c;
+}
+
+/* = */
+
+.theme__block-item {
+   display: inline-block;
+   width: 50px;
+   height: 40px;
+   background-color: rgb(182, 182, 182);
+}
+
+.theme__block-item:not(:last-child) {
+   margin-right: 15px;
+}
+
+/* = */
+
+.theme__block-items p.theme__block-item {
+   background-color: #ffff00;
+}
+
+div.block-item-first:first-child {
+   background-color: #ff2c2c;
+}
+
+div.block-item-last:last-child {
+   background-color: #ff2c2c;
+}
+
+.block-items-first-type div:first-of-type {
+   background-color: #ff2c2c;
+}
+
+.block-items-last-type div:last-of-type {
+   background-color: #ff2c2c;
+}
+
+div.block-item-nth:nth-child(3) {
+   background-color: #ff2c2c;
+}
+
+div.block-item-odd:nth-child(odd) {
+   background-color: #ff2c2c;
+}
+
+div.block-item-even:nth-child(even) {
+   background-color: #ff2c2c;
+}
+
+.block-items-l p:not(:last-child) {
+   background-color: #ff2c2c;
+}
+
+.block-items-f p:not(:first-child) {
+   background-color: #ff2c2c;
+}
+
+/* = */
+
+.еlements {}
+
+.theme__before,
+.theme__after {
+   width: 200px;
+   height: 40px;
+   margin-bottom: 25px;
+   text-align: right;
+   background-color: rgb(182, 182, 182);
+}
+
+.theme__before::before {
+   content: '';
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: #ff2c2c;
+}
+
+.theme__after {
+   text-align-last: left;
+}
+
+.theme__after::after {
+   content: '';
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: #ff2c2c;
+}
