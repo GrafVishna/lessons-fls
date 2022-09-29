@@ -118,10 +118,12 @@ body:target .visited:visited {
    padding: 5px 15px;
    border: 1px solid var(--active-bg-color);
    border-radius: 5px;
+   min-width: 120px;
+
 }
 
 .theme__links-line a.target {
-   min-width: 200px;
+   min-width: 120px;
 }
 
 .theme__links-line a {
