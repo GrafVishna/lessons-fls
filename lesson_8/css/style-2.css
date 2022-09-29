@@ -47,7 +47,7 @@ body:target a {
 
 body:target a:hover {
    background-color: var(--main-bg-color);
-   color: var(--main-text-color);
+   color: Z;
 }
 
 body:target .theme__block-item {
@@ -86,7 +86,7 @@ body:target .visited:visited {
 
 /* ================================== */
 
-.theme {
+.theme:not(:last-child) {
    margin-bottom: 25px;
 }
 
@@ -156,9 +156,15 @@ body:target .visited:visited {
 }
 
 /* ================================= */
+.theme__block:not(:last-child) {
+   margin-bottom: 20px;
+}
 
 .theme__block-items {
    font-size: 0;
+}
+
+.theme__block-items:not(:last-child) {
    margin-bottom: 25px;
 }
 
@@ -250,7 +256,6 @@ div.block-item-even:nth-child(even) {
 .theme__after {
    width: 200px;
    height: 40px;
-   margin-bottom: 25px;
    background-color: var(--main-text-color);
 }
 
@@ -264,6 +269,7 @@ div.block-item-even:nth-child(even) {
 
 .theme__after {
    text-align: right;
+   margin-bottom: 25px;
 }
 
 .theme__after::after {
