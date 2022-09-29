@@ -47,7 +47,7 @@ body:target a {
 
 body:target a:hover {
    background-color: var(--main-bg-color);
-   color: Z;
+   color: var(--main-text-color);
 }
 
 body:target .theme__block-item {
@@ -254,9 +254,14 @@ div.block-item-even:nth-child(even) {
 
 .theme__before,
 .theme__after {
-   width: 200px;
+   width: 250px;
    height: 40px;
    background-color: var(--main-text-color);
+}
+
+.theme__after {
+   text-align: right;
+   margin-bottom: 25px;
 }
 
 .theme__before::before {
@@ -265,11 +270,6 @@ div.block-item-even:nth-child(even) {
    height: 40px;
    width: 40px;
    background-color: var(--active-elem-color);
-}
-
-.theme__after {
-   text-align: right;
-   margin-bottom: 25px;
 }
 
 .theme__after::after {
