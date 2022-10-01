@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
 
 body {
    font-family: Arial, "Lato", sans-serif;
@@ -379,7 +379,7 @@ body {
 
 .box-game__line-9 {
    box-shadow: var(--box-sh);
-   background: url('../img/12.jpg') 0 0 / auto 100% repeat;
+   background: url('../img/bg3.jpeg') 0 0 / auto 100% repeat;
    margin-left: 35px;
    width: 350px;
    height: 80px;
