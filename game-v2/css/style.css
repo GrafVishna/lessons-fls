@@ -459,7 +459,7 @@ body {
    height: 100%;
 }
 
-.line-10>.game__line-items>.game__line-item:not(:first-child) {
+.line-10>.game__line-items .game__line-item:not(:first-child) {
    margin-left: -48px;
 }
 
@@ -522,7 +522,7 @@ body {
    height: 100%;
 }
 
-.line-12>.game__line-items>.game__line-item:not(:first-child) {
+.line-12>.game__line-items .game__line-item:not(:first-child) {
    margin-left: -38px;
 }
 
