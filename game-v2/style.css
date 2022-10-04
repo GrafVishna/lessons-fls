@@ -1,0 +1,648 @@
+body {
+   background-color: #E9E3DB;
+}
+
+.wrapper {
+   padding: 50px 30px;
+}
+
+/* ============================= */
+
+.game {
+   width: 1200px;
+   height: 700px;
+   padding: 15px;
+   margin: 0 auto;
+   background: url('../img/bg/main.jpg') 0 0 / cover no-repeat;
+   border: 3px solid #95837B;
+   box-shadow: 0 0 20px 5px #95837B;
+}
+
+.game:target * {
+   opacity: 0;
+}
+
+.game:target {
+   background: url('../img/pers/princess/love.webp') 50% / auto 100% no-repeat;
+   background-color: #e4c9b1;
+}
+
+/* === */
+
+.game__line {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.game-next:hover>.game__line,
+.game-next .game-next-corner:hover>.game__line,
+.game-start:hover>.game__line {
+   opacity: 1;
+   visibility: visible;
+}
+
+.game__line-items {
+   overflow: hidden;
+}
+
+.game-start {
+   border-radius: 10px 0 0 10px;
+   background: url('../img/go-2.webp') 0 0 / 100% 100% no-repeat;
+}
+
+.game-next {
+   background-color: #7d7d7d;
+}
+
+/*! ============================= */
+
+.game__line-item {
+   display: inline-block;
+   background-size: 100% auto;
+   background-position: 0 70%;
+   background-repeat: no-repeat;
+   opacity: 0;
+}
+
+.game__line-item:hover {
+   opacity: 1;
+}
+
+.game-item-1 {
+   background-image: url('../img/pers/pers-2-1.png');
+}
+
+.game-item-2 {
+   background-image: url('../img/pers/pers-2-2.png');
+}
+
+.game-item-3 {
+   background-image: url('../img/pers/pers-2-3.png');
+}
+
+.game-item-4 {
+   background-image: url('../img/pers/pers-2-4.png');
+}
+
+.game-item-5 {
+   background-image: url('../img/pers/pers-2-5.png');
+}
+
+.game-item-6 {
+   background-image: url('../img/pers/pers-2-6.png');
+}
+
+.game-item-7 {
+   background-image: url('../img/pers/pers-2-7.png');
+}
+
+.game-item-8 {
+   background-image: url('../img/pers/pers-2-8.png');
+}
+
+.game-item-9 {
+   background-image: url('../img/pers/pers-2-9.png');
+}
+
+.game-item-10 {
+   background-image: url('../img/pers/pers-2-10.png');
+}
+
+.game-item-11 {
+   background-image: url('../img/pers/pers-2-11.png');
+}
+
+.game-item-12 {
+   background-image: url('../img/pers/pers-2-12.png');
+}
+
+/*! === */
+.game-item-left-1 {
+   background-image: url('../img/pers/left/pers-2-1.png');
+}
+
+.game-item-left-2 {
+   background-image: url('../img/pers/left/pers-2-2.png');
+}
+
+.game-item-left-3 {
+   background-image: url('../img/pers/left/pers-2-3.png');
+}
+
+.game-item-left-4 {
+   background-image: url('../img/pers/left/pers-2-4.png');
+}
+
+.game-item-left-5 {
+   background-image: url('../img/pers/left/pers-2-5.png');
+}
+
+.game-item-left-6 {
+   background-image: url('../img/pers/left/pers-2-6.png');
+}
+
+.game-item-left-7 {
+   background-image: url('../img/pers/left/pers-2-7.png');
+}
+
+.game-item-left-8 {
+   background-image: url('../img/pers/left/pers-2-8.png');
+}
+
+.game-item-left-9 {
+   background-image: url('../img/pers/left/pers-2-9.png');
+}
+
+.game-item-left-10 {
+   background-image: url('../img/pers/left/pers-2-10.png');
+}
+
+.game-item-left-11 {
+   background-image: url('../img/pers/left/pers-2-11.png');
+}
+
+.game-item-left-12 {
+   background-image: url('../img/pers/left/pers-2-12.png');
+}
+
+/*! ============================= */
+
+.game-start {
+   width: 80px;
+   height: 80px;
+   background-color: #7d7d7d;
+}
+
+/*! line-1 === */
+
+.line-1 {
+   width: 1084px;
+   height: 80px;
+   margin-left: 80px;
+   border-radius: 0 10px 0 0;
+   background: url('../img/bg/bg8.jpg') 0 0 / auto 100% repeat;
+}
+
+.line-1>.game-next {
+   width: 50px;
+   height: 80px;
+   margin-left: calc(100% - 50px);
+   margin-top: -80px;
+   border-radius: 0 10px 0 0;
+   background: url('../img/decor/dor2.png') -16px 0 / 80px 100% no-repeat, url('../img/bg/ton-3.jpg') 0 0 / 100% 100% no-repeat;
+}
+
+.line-1>.game__line-items {
+   height: 100%;
+   padding-right: 50px;
+}
+
+.line-1>.game__line-items .game__line-item {
+   width: 40px;
+   height: 100%;
+}
+
+.line-1>.game__line-items .game__line-item:not(:first-child) {
+   margin-left: -38px;
+}
+
+/*! line-2 === */
+
+.line-2 {
+   height: 280px;
+   padding-top: 80px;
+}
+
+.line-2>.game__line-items {
+   width: 50px;
+   height: 200px;
+   background: url('../img/bg/tonell2.jpeg') 0 0 / 100% auto repeat;
+}
+
+.line-2>.game__line-items {
+   height: 100%;
+}
+
+.line-2>.game__line-items .game__line-item {
+   width: 100%;
+   height: 50px;
+   background-position: 2px 0;
+}
+
+.line-2>.game__line-items .game__line-item:not(:first-child) {
+   margin-top: -45px;
+}
+
+.line-2>.game-next {
+   height: 80px;
+   width: 50px;
+   border-radius: 0 0 10px 0;
+   background: url('../img/decor/dor2.png') -16px 0 / 80px 100% no-repeat, url('../img/bg/ton-3.jpg') 0 0 / 100% 100% no-repeat;
+}
+
+/*! line-3 === */
+
+.line-3 {
+   height: 80px;
+   width: 400px;
+   margin-left: -400px;
+   border-radius: 0 0 0 10px;
+   background: url('../img/bg/bg3.jpeg') 0 0 / auto 100% repeat;
+}
+
+.line-3>.game__line-items {
+   height: 100%;
+   padding-left: 50px;
+}
+
+.line-3>.game__line-items .game__line-item {
+   width: 40px;
+   height: 100%;
+}
+
+.line-3>.game__line-items .game__line-item:not(:first-child) {
+   margin-left: -38px;
+}
+
+.line-3>.game-next {
+   height: 80px;
+   width: 50px;
+   margin-top: -80px;
+   padding-top: 1px;
+   border-radius: 0 0 0 10px;
+   background: url('../img/decor/dor2.png') -16px 0 / 80px 100% no-repeat, url('../img/bg/ton-3.jpg') 0 0 / 100% 100% no-repeat;
+}
+
+/*! line-4 === */
+
+.line-4 {
+   width: 50px;
+   height: 160px;
+   border-radius: 0 10px 0 0;
+   background: url('../img/decor/ladder-11.png') 0 0 / 100% auto repeat;
+}
+
+.line-4>.game__line-items {
+   height: 160px;
+   margin-top: -160px;
+   padding-top: 50px;
+}
+
+.line-4>.game__line-items .game__line-item {
+   width: 100%;
+   height: 50px;
+   background-position: 7px 0;
+}
+
+.line-4>.game__line-items .game__line-item:not(:first-child) {
+   margin-top: -45px;
+}
+
+.line-4>.game-next {
+   height: 80px;
+   width: 50px;
+   margin-top: -160px;
+   border-radius: 0 10px 0 0;
+   background: url('../img/decor/dor3.png') -2px 0 / 55px 100% no-repeat, url('../img/bg/ton-3.jpg') 0 0 / 100% 100% no-repeat;
+}
+
+/*! line-5 === */
+
+.line-5 {
+   height: 80px;
+   width: 500px;
+   margin-left: -500px;
+   background: url('../img/bg/bg7.jpg') 0 0 / auto 100% repeat;
+}
+
+.line-5>.game__line-items {
+   height: 80px;
+   width: 500px;
+}
+
+.line-5>.game__line-items .game__line-item {
+   width: 40px;
+   height: 100%;
+}
+
+.line-5>.game__line-items .game__line-item:not(:first-child) {
+   margin-left: -38px;
+}
+
+.line-5>.game-next {
+   height: 80px;
+   width: 80px;
+   border-radius: 80px 0 0 80px;
+   margin-top: -80px;
+   margin-left: -80px;
+   padding-top: 20px;
+   background: url('../img/decor/pipe44.png') 0 0 / 100% 100% repeat;
+}
+
+.game-next-corner {
+   width: 60px;
+   height: 60px;
+   background-color: #7d7d7d;
+   margin-left: -50px;
+   background: url('../img/decor/pipe11.png') 0 0 / 100% no-repeat;
+}
+
+/*! line-6 === */
+
+.line-6 {
+   width: 35px;
+   height: 125px;
+   padding-top: 55px;
+   margin-left: 3px;
+}
+
+.line-6>.game__line-items {
+   width: 35px;
+   height: 70px;
+   background: url('../img/decor/pipe33.png') 0 0 / 100% 100% no-repeat;
+}
+
+.line-6>.game-next {
+   width: 60px;
+   height: 60px;
+   margin-left: -3px;
+   padding-left: 60px;
+   padding-top: 15px;
+   background: url('../img/decor/pipe111.png') 0 0 / 100% no-repeat;
+}
+
+/*! line-7 === */
+
+.line-7 {
+   width: 460px;
+   height: 30px;
+   margin-top: 5px;
+}
+
+.line-7>.game__line-items {
+   width: 460px;
+   height: 30px;
+   background: url('../img/decor/pipe3.png') 0 0 / 100% 100% no-repeat;
+}
+
+.line-7>.game-next {
+   width: 50px;
+   height: 50px;
+   margin-left: 460px;
+   margin-top: -32px;
+   padding-left: 16px;
+   padding-top: 45px;
+   background: url('../img/decor/pipe1.png') 0 0 / 100% no-repeat;
+}
+
+/*! line-8 === */
+
+.line-8 {
+   height: 80px;
+   width: 35px;
+}
+
+.line-8>.game__line-items {
+   height: 80px;
+   width: 35px;
+   background: url('../img/decor/pipe33.png') 0 0 / 100% 100% no-repeat;
+}
+
+.line-8>.game-next {
+   height: 55px;
+   width: 55px;
+   margin-left: -1px;
+   padding-top: 15px;
+   background: url('../img/decor/pipe111.png') 0 0 / 100% no-repeat;
+}
+
+/*! line-9 === */
+
+.line-9 {
+   width: 150px;
+   height: 40px;
+   margin-left: 55px;
+}
+
+.line-9>.game__line-items {
+   width: 150px;
+   height: 35px;
+   background: url('../img/decor/pipe3.png') 0 0 / 100% 100% no-repeat;
+}
+
+.line-9>.game-next {
+   width: 60px;
+   height: 80px;
+   margin-left: 150px;
+   margin-top: -70px;
+   padding-left: 60px;
+   background: url('../img/decor/dor4.png') -10px 0 / 80px 100% no-repeat, url('../img/bg/123.jpg') 0 0 / auto 100% repeat;
+   border-radius: 10px 0 0 10px;
+}
+
+/*! line-10 === */
+
+.line-10 {
+   width: 200px;
+   height: 80px;
+}
+
+.line-10>.game__line-items {
+   width: 200px;
+   height: 80px;
+   background: url('../img/bg/123.jpg') 0 0 / auto 100% repeat;
+   margin-top: -50px;
+}
+
+.line-10>.game__line-items .game__line-item {
+   width: 50px;
+   height: 100%;
+}
+
+.line-10>.game__line-items .game__line-item:not(:first-child) {
+   margin-left: -48px;
+}
+
+.line-10>.game-next {
+   width: 50px;
+   height: 80px;
+   margin-top: -80px;
+   margin-left: 200px;
+   padding-top: 80px;
+   background: url('../img/decor/dor4-2.png') -10px 0 / 70px 100% no-repeat, url('../img/bg/123.jpg') 0 0 / auto 100% repeat;
+}
+
+/*! line-11 === */
+
+.line-11 {
+   width: 50px;
+   height: 80px;
+}
+
+.line-11>.game__line-items {
+   width: 50px;
+   height: 80px;
+   background: url('../img/decor/ladder-11.png') 0 0 / 100% auto repeat;
+}
+
+.line-11>.game__line-items .game__line-item {
+   width: 100%;
+   height: 50px;
+   margin-top: -15px;
+   background-position: 2px 0;
+}
+
+.line-11>.game__line-items .game__line-item:not(:first-child) {
+   margin-top: -45px;
+}
+
+.line-11>.game-next {
+   width: 50px;
+   height: 80px;
+   border-radius: 0 0 10px 0;
+   background: url('../img/decor/dor3.png') -2px 0 / 55px 100% no-repeat, url('../img/bg/ton-3.jpg') 0 0 / 100% 100% no-repeat;
+}
+
+/*! line-12 === */
+
+.line-12 {
+   width: 900px;
+   height: 80px;
+   margin-left: -900px;
+}
+
+.line-12>.game__line-items {
+   width: 900px;
+   height: 80px;
+   background: url('../img/bg/bg12.jpg') 0 0 / auto 100% repeat;
+}
+
+.line-12>.game__line-items .game__line-item {
+   width: 40px;
+   height: 100%;
+}
+
+.line-12>.game__line-items .game__line-item:not(:first-child) {
+   margin-left: -38px;
+}
+
+.line-12>.game-next {
+   width: 120px;
+   height: 80px;
+   margin-top: -80px;
+   margin-left: -120px;
+   padding-top: 80px;
+   padding-left: 40px;
+   border-radius: 10px 0 0 10px;
+   background: url('../img/bg/fort.png') 0 100% / auto 85% no-repeat, url('../img/bg/bg13.jpg') 0 0 / auto 100% repeat;
+}
+
+/*! line-13 === */
+
+.line-13 {
+   width: 40px;
+   height: 130px;
+   margin-top: -210px;
+}
+
+.line-13>.game__line-items {
+   width: 40px;
+   height: 130px;
+   background: url('../img/bg/car-2.jpeg') -10px 0 / 150% auto repeat;
+}
+
+.line-13>.game__line-items .game__line-item-car {
+   width: 100%;
+   height: 60px;
+   margin-top: -55px;
+   opacity: 0;
+   background: url('../img/car/car.png') 8px 0 / auto 100% no-repeat;
+}
+
+.line-13>.game__line-items .game__line-item-car:hover {
+   opacity: 1;
+}
+
+.line-13>.game-next {
+   width: 80px;
+   height: 80px;
+   margin-top: -210px;
+   padding-left: 80px;
+   padding-top: 20px;
+   margin-left: -20px;
+   border-radius: 10px 10px 0 10px;
+   background: url('../img/bg/fort-2.png') 0 100% / auto 110% no-repeat, url('../img/bg/bg13.jpg') 0 0 / auto 100% repeat;
+}
+
+.line-13>.game-next
+/*! line-14 === */
+
+.line-14 {
+   height: 60px;
+   width: 300px;
+}
+
+.line-14>.game__line-items {
+   height: 60px;
+   width: 300px;
+   background: url('../img/bg/bg17.jpg') 0 0 / auto 100% repeat;
+}
+
+.line-14>.game__line-items .game__line-item-boat:not(:first-child) {
+   margin-left: -38px;
+}
+
+.line-14>.game__line-items .game__line-item-boat {
+   display: inline-block;
+   width: 40px;
+   height: 100%;
+   opacity: 0;
+}
+
+.line-item-boat-left {
+   background: url('../img/korabl/korabl-1.png') 50% -7px / auto 100% no-repeat;
+}
+
+.line-item-boat-center {
+   background: url('../img/korabl/korabl.png') 50% -7px / auto 100% no-repeat;
+}
+
+.line-item-boat-right {
+   background: url('../img/korabl/korabl-3.png') 50% -7px / auto 100% no-repeat;
+}
+
+.line-14>.game__line-items .game__line-item-boat:hover {
+   opacity: 1;
+}
+
+.line-14>.game-next {
+   height: 80px;
+   width: 80px;
+   margin-left: 300px;
+   margin-top: -58px;
+   padding-top: 80px;
+   border-radius: 0 10px 0 0;
+   background: url('../img/pers/princess/pr-2.png') 50% / auto 90% no-repeat, url('../img/bg/bg13.jpg') 50% / auto 100% no-repeat;
+}
+
+/*! line-15 === */
+
+.line-15 {
+   height: 100px;
+   width: 200px;
+   margin-left: -60px;
+}
+
+.line-15>.game__line-items {
+   height: 100px;
+   width: 200px;
+   border-radius: 10px;
+   display: block;
+   cursor: pointer;
+   background: url('../img/bg/bg18.jpg') 50% / auto 100% no-repeat;
+}
+
+.line-15>.game__line-items:hover {
+   box-shadow: inset 0 0 20px #fff;
+   background: url('../img/bg/finish.gif') 50% / auto 150% no-repeat, url('../img/bg/bg-love.jpg') 50% / cover no-repeat;
+}
