@@ -71,7 +71,7 @@
 
 .axis--after {
    right: 52px;
-   bottom: 50px;
+   bottom: 55px;
 }
 
 .axis-absorber {
@@ -104,12 +104,12 @@
 }
 
 .axis-absorber--after.axis-absorber--right {
-   bottom: 60px;
+   bottom: 65px;
    right: 100px;
 }
 
 .axis-absorber--after.axis-absorber--left {
-   bottom: 60px;
+   bottom: 65px;
    right: 165px;
 }
 
@@ -158,8 +158,8 @@
    bottom: 0px;
    right: 40px;
    z-index: 4;
-   width: 90px;
-   height: 110px;
+   width: 100px;
+   height: 120px;
 }
 
 .wheel--item-3 {
@@ -173,9 +173,9 @@
 .wheel--item-4 {
    bottom: 5px;
    right: 240px;
-   z-index: 2;
-   width: 80px;
-   height: 100px;
+   z-index: 1;
+   width: 90px;
+   height: 110px;
 }
 
 .wheel--item-4 .circle--item2-2 {
