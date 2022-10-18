@@ -381,11 +381,11 @@
 
 .front-car--item-2::after {
    z-index: 2;
-   top: 99%;
-   left: -1px;
+   top: 79px;
+   left: -10px;
    width: 210px;
-   height: 54px;
-   border-radius: 0 0 0 20px;
+   height: 64px;
+   border-radius: 10px 0 0 20px;
    border-bottom: 3px solid #000;
    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 7%, rgba(79, 79, 79, 1) 29%, rgba(85, 85, 85, 1) 52%, rgba(0, 0, 0, 1) 77%);
 }
@@ -581,8 +581,8 @@
 
 .front-car--item-8 {
    content: '';
-   border-radius: 0 0 20px 0;
-   height: 54px;
+   border-radius: 0 10px 20px 0;
+   height: 64px;
    width: 65px;
    left: 40px;
    bottom: 2px;
@@ -596,9 +596,9 @@
 .front-car--item-8:before {}
 
 .front-car--item-8:after {
-   width: 138px;
+   width: 77px;
    height: 3px;
-   top: -2px;
+   top: 8px;
    right: -80px;
    z-index: -1;
    background-color: rgb(148, 0, 0);
@@ -658,12 +658,12 @@
    position: absolute;
    z-index: 2;
    border-radius: 5px 5px 0 0;
-   bottom: 60px;
+   bottom: 66px;
    left: -120px;
    width: 130px;
-   height: 34px;
+   height: 28px;
    background-color: rgb(53, 53, 53);
-   border-top: 2px solid rgb(212, 212, 212);
+   border-top: 3px solid rgb(212, 212, 212);
    border-left: 2px solid rgb(165, 165, 165);
    border-right: 2px solid rgb(165, 165, 165);
 }
@@ -672,10 +672,10 @@
    top: -15px;
    width: 40px;
    height: 15px;
-   left: 46px;
+   left: 43px;
    border-radius: 10px 10px 0 0;
    background-color: inherit;
-   border-top: 2px solid rgb(212, 212, 212);
+   border-top: 3px solid rgb(212, 212, 212);
 }
 
 .front-car--headlamp-left {
