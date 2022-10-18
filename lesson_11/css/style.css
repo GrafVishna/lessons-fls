@@ -40,7 +40,6 @@
    bottom: 0;
    width: 100px;
    height: 120px;
-   /* filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.404)); */
 }
 
 .wheel::before {
@@ -134,6 +133,7 @@
    height: 80px;
    border-radius: 0 0 40% 0;
    background-color: rgb(34, 34, 34);
+   box-shadow: inset 0px 15px 25px 0 #000;
 }
 
 .pallet::before {
@@ -241,6 +241,11 @@
    box-shadow: 0px 0px 10px 5px #000, inset 0px 0px 7px 1px #000;
 }
 
+.wheel--item-3 .circle--item1-1,
+.wheel--item-4 .circle--item2-2 {
+   box-shadow: inset 0px 0px 65px 3px #000, -10px 0px 5px -3px #000;
+}
+
 .circle__disk::before {
    top: 30%;
    left: 32%;
@@ -320,8 +325,8 @@
    height: 65px;
    border-radius: 0 0 20px 20px;
    background-color: rgb(175, 28, 28);
-   box-shadow: inset 0px -30px 20px -20px rgb(172, 2, 2);
-   border-bottom: 10px solid rgb(148, 0, 0);
+   box-shadow: inset 0px -30px 20px -20px rgb(160, 0, 0), inset 0px -20px 20px -20px rgb(141, 0, 0);
+   border-bottom: 10px solid rgb(173, 0, 0);
    border-right: 3px solid rgb(148, 0, 0);
 }
 
@@ -379,11 +384,10 @@
    top: 99%;
    left: -1px;
    width: 210px;
-   height: 50px;
+   height: 54px;
    border-radius: 0 0 0 20px;
-   border-bottom: 3px solid rgb(148, 0, 0);
-   background-color: rgb(209, 40, 40);
-   box-shadow: inset 0px -40px 20px -20px rgb(172, 2, 2);
+   border-bottom: 3px solid #000;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 7%, rgba(79, 79, 79, 1) 29%, rgba(85, 85, 85, 1) 52%, rgba(0, 0, 0, 1) 77%);
 }
 
 .front-car--item-2-2 {
@@ -395,17 +399,16 @@
    z-index: 2;
    background-color: rgb(175, 28, 28);
    border-top: 4px solid rgb(143, 0, 0);
-   border-bottom: 3px solid rgb(148, 0, 0);
    box-shadow: inset 0px 40px 20px -10px rgb(160, 0, 0), inset -20px 0px 10px -10px rgb(160, 0, 0);
 }
 
 .front-car--item-3 {
    background-color: rgb(61, 61, 61);
-   top: 5px;
+   top: 4px;
    right: 380px;
    width: 250px;
    height: 150px;
-   border-radius: 67% 0 0 0;
+   border-radius: 75% 0 0 0;
    border-top: 7px solid rgb(134, 0, 0);
    border-left: 2px solid rgb(134, 0, 0);
    box-shadow: inset 3px 0px 15px 2px rgb(19, 19, 19);
@@ -414,7 +417,7 @@
 .front-car--item-3::before {
    z-index: 1;
    bottom: 50px;
-   left: 3px;
+   left: 7px;
    width: 100%;
    height: 20px;
    border-radius: 7px 0 0 0;
@@ -440,7 +443,7 @@
    width: 35px;
    border-radius: 20px 20px 5px 5px;
    height: 10px;
-   background-color: rgb(172, 0, 0);
+   background-color: rgb(153, 0, 0);
    border-top: 2px solid rgb(136, 0, 0);
 }
 
@@ -452,7 +455,7 @@
    height: 150px;
    border-radius: 0 10px 0 0;
    border-radius: 70% 0 0 0;
-   background-color: rgb(61, 61, 61);
+   background-color: rgb(58, 58, 58);
    border-top: 15px solid rgb(172, 0, 0);
    border-left: 10px solid rgb(172, 0, 0);
    box-shadow: inset 5px -5px 15px 2px rgb(19, 19, 19), inset -5px -15px 5px 10px rgb(19, 19, 19), -4px 0px 5px -5px rgb(19, 19, 19);
@@ -466,7 +469,20 @@
    height: 6px;
    border-radius: 5px 0 3px 3px;
    background: linear-gradient(180deg, rgba(223, 223, 223, 1) 0%, rgba(163, 163, 163, 1) 65%, rgba(83, 83, 83, 1) 100%);
-   border-bottom: 1px solid #000;
+   border-bottom: 3px solid #000;
+}
+
+.front-car--item-2-2::before {
+   bottom: -22px;
+   left: 47px;
+   width: 40px;
+   height: 25px;
+   border-radius: 50px 0 0 0;
+   z-index: -1;
+   background-color: transparent;
+   border-top: 3px solid rgb(0, 0, 0);
+   border-left: 13px solid rgb(0, 0, 0);
+   z-index: 1;
 }
 
 .front-car--item-5-5 {
@@ -500,7 +516,7 @@
    z-index: 2;
    top: 0px;
    right: 205px;
-   width: 300px;
+   width: 295px;
    height: 15px;
    border-radius: 75% 0 0 0;
    background-color: rgb(172, 0, 0);
@@ -534,60 +550,59 @@
 
 .front-car--item-6-6::after {
    z-index: 5;
-   bottom: -69px;
+   bottom: -80px;
    left: -29px;
    width: 34px;
-   height: 72px;
+   height: 80px;
    border-radius: 50px 0 0 0;
    border-top: 5px solid rgb(158, 0, 0);
    border-left: 5px solid rgb(150, 0, 0);
 }
 
 .front-car--item-7 {
-   z-index: 0;
-   top: 15px;
-   right: 300px;
-   width: 180px;
-   height: 100px;
-   background-color: rgb(61, 61, 61);
+   z-index: 7;
+   bottom: 45px;
+   right: 230px;
+   width: 200px;
+   height: 20px;
+   background-color: transparent;
+   background: linear-gradient(180deg, rgba(148, 0, 0, 0) 0%, rgba(165, 1, 1, 0.377) 50%, rgba(148, 0, 0, 0) 100%);
 }
+
+.front-car--item-7::before {
+   width: 140px;
+   height: 100%;
+   top: -20px;
+   left: 280px;
+   background: linear-gradient(180deg, rgba(148, 0, 0, 0) 0%, rgba(165, 1, 1, 0.247) 50%, rgba(148, 0, 0, 0) 100%);
+}
+
+/* !=== */
 
 .front-car--item-8 {
    content: '';
-   background-color: rgb(209, 40, 40);
-   border-radius: 0 0 20px 20px;
-   height: 52px;
+   border-radius: 0 0 20px 0;
+   height: 54px;
    width: 65px;
-   left: 44px;
-   bottom: 6px;
-   z-index: 6;
-   box-shadow: inset 0px -30px 20px -10px rgb(172, 2, 2);
-   border-right: 3px solid rgb(148, 0, 0);
-   border-bottom: 3px solid rgb(148, 0, 0);
-   background-color: rgb(175, 28, 28);
+   left: 40px;
+   bottom: 2px;
+   z-index: 8;
+   border-right: 3px solid rgb(0, 0, 0);
+   border-bottom: 3px solid #000000;
+   border-left: 3px solid #000;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 7%, rgb(37, 37, 37) 29%, rgb(39, 39, 39) 52%, rgba(0, 0, 0, 1) 77%);
 }
 
-.front-car--item-8:before {
-   bottom: 24px;
-   right: -25px;
-   width: 25px;
-   height: 25px;
-   border-radius: 20px 0 0 0;
-   z-index: 2;
-   background-color: transparent;
-   box-shadow: -25px -25px 0 15px rgb(175, 28, 28);
-   border-top: 3px solid rgb(148, 0, 0);
-   border-left: 3px solid rgb(148, 0, 0);
-   z-index: 5;
-}
+.front-car--item-8:before {}
 
 .front-car--item-8:after {
-   width: 50px;
-   height: 136px;
-   bottom: 0;
-   left: 0;
-   border-radius: 30px 0 0 20px;
-   box-shadow: -10px 0px 15px -7px rgb(175, 28, 28);
+   width: 138px;
+   height: 3px;
+   top: -2px;
+   right: -80px;
+   z-index: -1;
+   background-color: rgb(148, 0, 0);
+   box-shadow: 0 -5px 15px 0 rgb(70, 0, 0);
 }
 
 .front-car .wheel {
@@ -639,39 +654,42 @@
    box-shadow: 5px 0 3px 3px rgb(88, 88, 88);
 }
 
+.front-car--item-12 {
+   position: absolute;
+   z-index: 2;
+   border-radius: 5px 5px 0 0;
+   bottom: 60px;
+   left: -120px;
+   width: 130px;
+   height: 34px;
+   background-color: rgb(53, 53, 53);
+   border-top: 2px solid rgb(212, 212, 212);
+   border-left: 2px solid rgb(165, 165, 165);
+   border-right: 2px solid rgb(165, 165, 165);
+}
+
+.front-car--item-12::before {
+   top: -15px;
+   width: 40px;
+   height: 15px;
+   left: 46px;
+   border-radius: 10px 10px 0 0;
+   background-color: inherit;
+   border-top: 2px solid rgb(212, 212, 212);
+}
+
 .front-car--headlamp-left {
    left: -140px;
 }
-
-/* 
-.front-car--headlamp-left::before {
-   top: -40px;
-   left: -250px;
-   width: 0;
-   height: 60px;
-   border-top: 50px solid transparent;
-   border-left: 400px solid rgba(255, 238, 0, 0.11);
-   border-bottom: 50px solid transparent;
-} */
 
 .front-car--headlamp-right {
    left: -30px;
 }
 
-/* .front-car--headlamp-right::before {
-   top: -40px;
-   left: -250px;
-   width: 0;
-   height: 60px;
-   border-top: 50px solid transparent;
-   border-left: 300px solid rgba(255, 238, 0, 0.11);
-   border-bottom: 50px solid transparent;
-} */
-
 .front-car--item-11 {
    width: 80px;
    height: 15px;
-   z-index: 2;
+   z-index: 3;
    bottom: -15px;
    border-radius: 0 7.5px 7.5px 0;
    border-right: 1px solid rgb(75, 75, 75);
@@ -690,7 +708,7 @@
 
 .front-car--item-11::after {
    border-radius: 0 0 7.5px 7.5px;
-   height: 14px;
+   height: 10px;
    width: 13px;
    bottom: 7px;
    right: 5px;
