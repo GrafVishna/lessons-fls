@@ -16,6 +16,44 @@ body {
    width: 100vw;
    height: 100vh;
 
+   &__audio {
+      position: absolute;
+      z-index: 98;
+      bottom: 20px;
+      right: 50px;
+      transform: translateX(-50%);
+      border: 2px solid #000;
+      border-radius: 50px;
+      overflow: hidden;
+   }
+
+   & audio {
+      width: 180px;
+      &::-webkit-media-controls-panel {
+         background: url("../img/fire-7.gif") 0 100% / cover no-repeat;
+         background-color: rgb(0, 0, 0);
+      }
+      &::-webkit-media-controls-play-button {
+         background: url("../img/play-solid.svg") 50% / 18px 18px no-repeat;
+      }
+      &::-webkit-media-controls-current-time-display,
+      &::-webkit-media-controls-time-remaining-display {
+         color: red;
+      }
+      &::-webkit-media-controls-timeline,
+      &::-webkit-media-controls-volume-slider-container,
+      &::-webkit-media-controls-volume-slider,
+      &::-webkit-media-controls-mute-button,
+      &::-webkit-media-controls-seek-forward-button,
+      &::-webkit-media-controls-rewind-button,
+      &::-webkit-media-controls-toggle-closed-captions-button,
+      &::-webkit-media-controls-return-to-realtime-button,
+      &::-webkit-media-controls-seek-back-button,
+      &::-webkit-media-controls-return-to-realtime-button {
+         display: none;
+      }
+   }
+
    // background: url("../img/fire-7.gif") 0 bottom / contain no-repeat, #000;
 
    // .box__container

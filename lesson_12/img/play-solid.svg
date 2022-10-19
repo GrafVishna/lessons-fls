@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 384 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="play-solid.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1642403"
+     inkscape:cx="151.60101"
+     inkscape:cy="259.82609"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <path
+     d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z fill: #323232"
+     id="path2" />
+  <path
+     style="fill:#ff0000;stroke-width:0.858929"
+     d="M 38.044466,478.41676 C 21.442208,474.80871 7.7274007,461.94596 2.3344981,444.92534 l -1.90503348,-6.0125 V 255.96091 73.008985 L 2.3344981,66.99648 C 7.8723338,49.518433 21.717212,36.917239 39.360006,33.296968 c 7.830066,-1.606716 17.308015,-0.749867 25.222884,2.28026 2.68802,1.029081 71.29499,42.433178 152.45994,92.009112 135.15497,82.55328 148.02284,90.60749 152.92294,95.71702 12.3887,12.91816 16.56744,30.72981 11.0527,47.11147 -2.89302,8.59378 -6.64472,14.40585 -13.12483,20.33272 -3.71956,3.40199 -45.4939,29.36349 -149.26604,92.76435 -79.25552,48.42214 -146.618648,89.32717 -149.695845,90.90005 -9.723606,4.97017 -20.196748,6.32811 -30.887289,4.00481 z"
+     id="path284" />
+</svg>

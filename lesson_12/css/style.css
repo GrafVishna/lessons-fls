@@ -12,15 +12,43 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+.box__audio {
+  position: absolute;
+  z-index: 98;
+  bottom: 20px;
+  right: 50px;
+  transform: translateX(-50%);
+  border: 2px solid #000;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.box audio {
+  width: 180px;
+}
+
+.box audio::-webkit-media-controls-panel {
+  background: url("../img/fire-7.gif") 0 100%/cover no-repeat;
+  background-color: rgb(0, 0, 0);
+}
+
+.box audio::-webkit-media-controls-play-button {
+  background: url("../img/play-solid.svg") 50%/18px 18px no-repeat;
+}
+
+.box audio::-webkit-media-controls-current-time-display, .box audio::-webkit-media-controls-time-remaining-display {
+  color: red;
+}
+
+.box audio::-webkit-media-controls-timeline, .box audio::-webkit-media-controls-volume-slider-container, .box audio::-webkit-media-controls-volume-slider, .box audio::-webkit-media-controls-mute-button, .box audio::-webkit-media-controls-seek-forward-button, .box audio::-webkit-media-controls-rewind-button, .box audio::-webkit-media-controls-toggle-closed-captions-button, .box audio::-webkit-media-controls-return-to-realtime-button, .box audio::-webkit-media-controls-seek-back-button, .box audio::-webkit-media-controls-return-to-realtime-button {
+  display: none;
 }
 
 .box__container {
