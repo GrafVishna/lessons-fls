@@ -1,0 +1,162 @@
+:root {
+   --size: 300px;
+   --size-lit: 100px;
+}
+
+body {
+   background-color: #000;
+}
+
+.box {
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh;
+
+   // background: url("../img/fire-7.gif") 0 bottom / contain no-repeat, #000;
+
+   // .box__container
+
+   &__container {
+      position: relative;
+      max-width: 1300px;
+      height: 100%;
+      width: 700px;
+      height: 800px;
+      margin: 0 auto;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 38%,
+            rgba(0, 0, 0, 0) 58%,
+            rgba(0, 0, 0, 1) 100%
+         );
+      }
+
+      & > img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -1;
+      }
+   }
+
+   // .box__items
+
+   &__body {
+      width: var(--size);
+      height: var(--size);
+      position: relative;
+      perspective: 500px;
+   }
+
+   // .box__item
+
+   &__item {
+   }
+}
+.item {
+   position: absolute;
+   z-index: 3;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   width: var(--size);
+   height: var(--size);
+   transform-style: preserve-3d;
+   animation: box 5s linear infinite;
+
+   // .item__side
+
+   &__side {
+      backdrop-filter: blur(1px);
+      background: rgba(255, 94, 0, 0.1);
+      box-shadow: inset 0 0 10px 0 rgba(255, 94, 0, 0.5), 0 0 50px 0 rgba(255, 94, 0, 0.5);
+      border: 2px solid rgb(0, 0, 0);
+      width: inherit;
+      height: inherit;
+      position: absolute;
+   }
+}
+
+.side-1 {
+   transform: translateZ(calc(var(--size) / 2));
+}
+.side-2 {
+   transform: rotateY(180deg) translateZ(calc(var(--size) / 2));
+}
+.side-3 {
+   transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
+   background: url("../img/2.png") 0 0 / contain no-repeat, rgba(255, 94, 0, 0.1);
+}
+.side-4 {
+   transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
+   background: url("../img/2.png") 0 0 / contain no-repeat, rgba(255, 94, 0, 0.1);
+}
+.side-5 {
+   transform: rotatex(90deg) translateZ(calc(var(--size) / 2));
+}
+.side-6 {
+   transform: rotatex(-90deg) translateZ(calc(var(--size) / 2));
+}
+
+.side-center {
+   border-radius: 50%;
+   // background-color: red;
+   animation: box-back 5s linear infinite;
+   backdrop-filter: none;
+   width: 60%;
+   height: 60%;
+   left: 20%;
+   top: 20%;
+   background: url("../img/fire-4.webp") 50% / cover no-repeat;
+   box-shadow: 0 0 20px 10px rgb(255, 61, 2), 0 0 50px 10px rgb(0, 0, 0);
+   transform: scale(1);
+}
+
+@keyframes box {
+   0% {
+      transform: rotatey(360deg) rotatex(0deg);
+      // transform: rotatey(0deg) rotatex(0deg);
+   }
+   100% {
+      transform: rotatey(0deg) rotatex(360deg);
+      // transform: rotatey(360deg) rotatex(360deg);
+   }
+}
+
+@keyframes box-back {
+   0% {
+      transform: rotatey(360deg) rotatex(360deg) scale(0.5);
+      // transform: rotatey(360deg) rotatex(360deg) scale(1);
+   }
+   50% {
+      transform: rotatey(-180deg) rotatex(0deg) scale(1.5);
+   }
+   100% {
+      transform: rotatey(-360deg) rotatex(-360deg) scale(0.5);
+      // transform: rotatey(-360deg) rotatex(-360deg) scale(1);
+   }
+}
