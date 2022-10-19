@@ -153,7 +153,7 @@ body {
   height: 60%;
   left: 20%;
   top: 20%;
-  background: url("../img/fire-4.webp") 50%/cover no-repeat;
+  background: url("../img/1.gif") 50%/cover no-repeat;
   box-shadow: 0 0 20px 10px rgb(255, 61, 2), 0 0 50px 10px rgb(0, 0, 0);
   transform: scale(1);
 }
