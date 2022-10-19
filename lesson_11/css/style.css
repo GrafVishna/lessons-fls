@@ -4,6 +4,10 @@
    position: absolute;
 }
 
+body {
+   background-color: #000;
+}
+
 .page {
    /* padding: 50px 0; */
 }
@@ -13,8 +17,13 @@
    width: 1200px;
    margin: 0 auto;
    position: relative;
-   /* background-color: rgb(255, 215, 169); */
    background: url('../img/istockphoto-473458638-170667a.jpg') 0 0 / cover no-repeat;
+}
+
+.car::before {
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 1) 100%);
 }
 
 .car__body {
@@ -712,6 +721,7 @@
 }
 
 .front-car--headlamp-right {
+   z-index: 2;
    left: 10px;
 }
 
