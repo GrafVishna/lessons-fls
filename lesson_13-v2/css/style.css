@@ -208,6 +208,7 @@
    position: absolute;
    bottom: 0;
    width: 20%;
+   transform: translate(0, 100%) rotate(-180deg);
 }
 
 .water__dolphin img {
@@ -216,14 +217,12 @@
 
 .dolphin--1 {
    left: 30%;
-   transform: translate(0, 100%) rotate(-180deg);
    animation: dolphin 8s linear 2s infinite;
    z-index: 1;
 }
 
 .dolphin--2 {
    left: 50%;
-   transform: translate(0, 100%) rotate(-180deg);
    animation: dolphin 8s linear 2.8s infinite;
    z-index: 2;
 }
@@ -782,6 +781,17 @@
    animation: airplane 20s linear infinite;
 }
 
+.airplane::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   animation: sun-moon-board 40s linear infinite;
+   background: url('../img/sky/airplane-night-2.webp') 0 0 / contain no-repeat;
+}
+
 .airplane-2 {
    position: absolute;
    top: 22%;
@@ -792,6 +802,17 @@
    padding-bottom: 8%;
    background: url('../img/sky/airplane-2.webp') 0 0 / contain no-repeat;
    animation: airplane-2 23s linear 10s infinite;
+}
+
+.airplane-2::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   animation: sun-moon-board 40s linear infinite;
+   background: url('../img/sky/airplane-night.webp') 0 0 / contain no-repeat;
 }
 
 /*! KEYFRAMES ======================================================================================================================================================== */
