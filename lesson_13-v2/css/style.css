@@ -359,6 +359,19 @@
    width: 25%;
 }
 
+.board::before {
+   content: '';
+   position: absolute;
+   overflow: hidden;
+   z-index: 4;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   animation: sun-moon-board 40s linear infinite;
+   background: url('../img/beach/board-night.png') 0 0 / contain no-repeat;
+}
+
 .board img {
    width: 100%;
    position: relative;
