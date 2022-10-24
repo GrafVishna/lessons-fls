@@ -215,14 +215,14 @@
 }
 
 .dolphin--1 {
-   left: 0;
+   left: 30%;
    transform: translate(0, 100%) rotate(-180deg);
    animation: dolphin 8s linear 2s infinite;
    z-index: 1;
 }
 
 .dolphin--2 {
-   left: 20%;
+   left: 50%;
    transform: translate(0, 100%) rotate(-180deg);
    animation: dolphin 8s linear 2.8s infinite;
    z-index: 2;
