@@ -129,15 +129,9 @@
    width: 100%;
 }
 
-.message__title-block {}
-
-.message__title-block {}
-
-.block-title {}
-
-.label {}
-
-.title {}
+.message__title-block:not(:last-child) {
+   margin-bottom: 40px;
+}
 
 .message__line input,
 .message__text textarea {
