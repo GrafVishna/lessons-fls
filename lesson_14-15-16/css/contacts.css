@@ -1,0 +1,252 @@
+/* ! HEADER */
+.header.header--contacts {
+   background: rgba(255, 255, 255, 0.4);
+   backdrop-filter: blur(10px);
+}
+
+.page {
+   padding-top: 152px;
+}
+
+/* ? CONTACTS ================================================================================================================== */
+
+.contact-info:not(:last-child) {
+   margin-bottom: 180px;
+}
+
+.contact-info__wrapper {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 30px;
+}
+
+.contact-info__title-block:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.contact-info__contacts:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.contact-info__contacts li {
+   display: flex;
+   column-gap: 12px;
+}
+
+.contact-info__contacts li:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.contact-info__contacts li::before {
+   font-size: 24px;
+   color: #FF3F3A;
+}
+
+.contact-info__contact-wrapper {
+   display: flex;
+   flex-direction: column;
+   row-gap: 8px;
+}
+
+.contact-info__mail span {
+   font-size: 14px;
+   color: #787A80;
+}
+
+.contact-info__mail a,
+.contact-info__mail p {
+   color: #1E212C;
+   font-size: 18px;
+}
+
+.contact-info__follow {
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.contact-info__follow:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+/* ==== */
+
+.contact-info__map {
+   flex: 0 1 705px;
+}
+
+.contact-info__image {
+   position: relative;
+   width: 100%;
+   padding-bottom: 58.4%;
+}
+
+.contact-info__image img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* ? MESSAGE FORM ================================================================================================================== */
+
+.message {
+   margin-bottom: 180px;
+}
+
+.message__wrapper {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 30px;
+}
+
+.message__picture {
+   flex: 0 1 435px;
+   align-self: center;
+}
+
+.message__image {
+   position: relative;
+   width: 100%;
+   padding-bottom: 110.5%;
+}
+
+.message__image img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* === */
+
+.message__content {
+   flex: 0 1 705px;
+   width: 100%;
+}
+
+.message__title-block {}
+
+.message__title-block {}
+
+.block-title {}
+
+.label {}
+
+.title {}
+
+.message__line input,
+.message__text textarea {
+   width: 100%;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+   padding: 13px 16px;
+   transition: box-shadow 0.3s ease;
+}
+
+.message__line input::placeholder,
+.message__text textarea::placeholder {
+   color: #9A9CA5;
+}
+
+.message__line label,
+.message__text label {
+   display: block;
+   margin-bottom: 8px;
+}
+
+.message__line input {
+   height: 52px;
+}
+
+.message__line input:focus,
+.message__text textarea:focus {
+   outline: none;
+   box-shadow: 0px 50px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 64, 58, 0.281), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+.message__line {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   column-gap: 25px;
+   row-gap: 15px;
+}
+
+.message__line:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.message__wrapper-input {
+   flex: 1 1 auto;
+   min-width: 250px;
+}
+
+.message__text:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+/* = */
+
+.message__bottom-line {
+   display: flex;
+   align-items: start;
+   column-gap: 25px;
+}
+
+.message__agree {
+   display: flex;
+   align-items: flex-start;
+   column-gap: 12px;
+   flex: 0 1 50%;
+}
+
+.checkbox {
+   position: relative;
+}
+
+.checkbox__input {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.checkbox__label {
+   cursor: pointer;
+   display: flex;
+   column-gap: 12px;
+}
+
+.checkbox__label::before {
+   content: '';
+   font-family: 'icomoon';
+   color: #fff;
+   font-size: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 16px;
+   height: 16px;
+   flex: 0 0 16px;
+   border: 1px solid #FF3F3A;
+   border-radius: 3px;
+   transform: translateY(4px);
+}
+
+.checkbox__input:focus~.checkbox__label::before {
+   background: #ffe9e8;
+}
+
+.checkbox__input:checked~.checkbox__label::before {
+   background: #FF3F3A;
+   content: '\e900';
+}
+
+.message__button {
+   flex: 0 0 50%;
+}

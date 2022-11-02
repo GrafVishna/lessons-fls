@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="css/common-style.css">
+      <link rel="stylesheet" href="css/contacts.css">
+      <script src="js/app.js"></script>
+      <title>Lesson 16</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <!-- ! header =========================================================== -->
+         <header class="header header--contacts">
+            <div class="header__container">
+               <div class="header__wrapper">
+                  <div class="header__logo">
+                     <img src="img/icons/logo.svg" alt="Logo">
+                  </div>
+                  <nav class="header__menu menu">
+                     <ul class="menu__links">
+                        <li>
+                           <a href="#">About Us</a>
+                        </li>
+                        <li>
+                           <a href="#">Courses</a>
+                        </li>
+                        <li>
+                           <a href="#">Events</a>
+                        </li>
+                        <li>
+                           <a href="#">Blog</a>
+                        </li>
+                        <li>
+                           <a href="#">Contacts</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <div class="header__buttons">
+                     <a href="#" class="header__button btn-color"><span>Get consultation</span></a>
+                     <div class="header__log-reg">
+                        <a href="#" class="header__login icon-profile">Log in</a>
+                        <span>/</span>
+                        <a href="#" class="header__register">Register</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- ! main =========================================================== -->
+         <main id="top" class="page">
+            <!-- ? SECTION CONTENT-INFO -->
+            <section class="contact-info">
+               <div class="contact-info__container">
+                  <div class="contact-info__wrapper">
+                     <div class="contact-info__content">
+                        <div class="contact-info__title-block block-title">
+                           <div class="label">Contact info</div>
+                           <h2 class="title">Get in touch</h2>
+                        </div>
+                        <!-- === -->
+                        <ul class="contact-info__contacts">
+                           <li class="contact-info__mail icon-chat">
+                              <div class="contact-info__contact-wrapper">
+                                 <span>Talk to us:</span>
+                                 <a href="mailto:hello@createx.com">hello@createx.com</a>
+                              </div>
+                           </li>
+                           <li class="contact-info__tel icon-iphone">
+                              <div class="contact-info__contact-wrapper">
+                                 <span>Call us:</span>
+                                 <a href="tel:4055550128">(405) 555-0128</a>
+                              </div>
+                           </li>
+                           <li class="contact-info__Address icon-map">
+                              <div class="contact-info__contact-wrapper">
+                                 <span>Address:</span>
+                                 <p>2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
+                              </div>
+                           </li>
+                        </ul>
+                        <!-- === -->
+                        <div class="contact-info__follow">Follow us:</div>
+                        <!-- === -->
+                        <ul class="contact-info_social-items line-social">
+                           <li class="line-social__social-item line-social__social-item--facebook">
+                              <a class="icon-facebook" href="#"></a>
+                           </li>
+                           <li class="line-social__social-item line-social__social-item--twitter">
+                              <a class="icon-twitter" href="#"></a>
+                           </li>
+                           <li class="line-social__social-item line-social__social-item--youtube">
+                              <a class="icon-youtube" href="#"></a>
+                           </li>
+                           <li class="line-social__social-item line-social__social-item--telegram">
+                              <a class="icon-telegram" href="#"></a>
+                           </li>
+                           <li class="line-social__social-item line-social__social-item--instagram">
+                              <a class="icon-instagram" href="#"></a>
+                           </li>
+                           <li class="line-social__social-item line-social__social-item--linkedin">
+                              <a class="icon-linked" href="#"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- === -->
+                     <div class="contact-info__map">
+                        <div class="contact-info__image">
+                           <img src="img/contacts-page/map.jpg" alt="map">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- ? SECTION MESSAGE -->
+            <section class="message">
+               <div class="message__container">
+                  <div class="message__wrapper">
+                     <div class="message__picture">
+                        <div class="message__image">
+                           <img src="img/contacts-page/illustration.svg" alt="Message">
+                        </div>
+                     </div>
+                     <!-- === -->
+                     <div class="message__content">
+                        <div class="message__title-block block-title">
+                           <div class="label">Contact info</div>
+                           <h2 class="title">Get in touch</h2>
+                        </div>
+                        <!-- === -->
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" class="message__form">
+                           <div class="message__line message__line--1">
+                              <div class="message__wrapper-input">
+                                 <label for="#first-name">First Name*</label>
+                                 <input id="first-name" type="text" name="first-name" autocomplete="off" placeholder="Your first name" required>
+                              </div>
+                              <div class="message__wrapper-input">
+                                 <label for="#last-name">Last Name*</label>
+                                 <input id="first-name" type="text" name="last-name" autocomplete="off" placeholder="Your last name" required>
+                              </div>
+                           </div>
+                           <!-- = -->
+                           <div class="message__line message__line--2">
+                              <div class="message__wrapper-input">
+                                 <label for="#email">Email*</label>
+                                 <input id="email" type="email" name="email" autocomplete="off" placeholder="Your working email" required>
+                              </div>
+                              <div class="message__wrapper-input">
+                                 <label for="#phone">Phone</label>
+                                 <input id="phone" type="tel" name="phone" autocomplete="off" placeholder="Your phone number">
+                              </div>
+                           </div>
+                           <!-- = -->
+                           <div class="message__text">
+                              <label for="#message">Your message</label>
+                              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                           </div>
+                           <!-- = -->
+                           <div class="message__bottom-line">
+                              <div class="message__agree checkbox">
+                                 <input class="checkbox__input" id="agree" type="checkbox" value="Yes" name="I-agree" required>
+                                 <label class="checkbox__label" for="agree"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+                              </div>
+                              <button class="message__button btn-color" type="submit"><span>Send message</span></button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <!-- ! footer =========================================================== -->
+         <footer class="footer">
+            <div class="footer__container">
+               <div class="footer__columns">
+                  <!-- COLUMN-1 -->
+                  <div class="footer__column logo-column">
+                     <div class="logo-column__logo">
+                        <img src="img/icons/logo-white.svg" alt="Logo">
+                     </div>
+                     <p class="logo-column__description">
+                        Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.
+                     </p>
+                     <ul class="contact-info_social-items line-social">
+                        <li class="line-social__social-item line-social__social-item--facebook">
+                           <a class="icon-facebook" href="#"></a>
+                        </li>
+                        <li class="line-social__social-item line-social__social-item--twitter">
+                           <a class="icon-twitter" href="#"></a>
+                        </li>
+                        <li class="line-social__social-item line-social__social-item--youtube">
+                           <a class="icon-youtube" href="#"></a>
+                        </li>
+                        <li class="line-social__social-item line-social__social-item--telegram">
+                           <a class="icon-telegram" href="#"></a>
+                        </li>
+                        <li class="line-social__social-item line-social__social-item--instagram">
+                           <a class="icon-instagram" href="#"></a>
+                        </li>
+                        <li class="line-social__social-item line-social__social-item--linkedin">
+                           <a class="icon-linked" href="#"></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- COLUMN-2 -->
+                  <div class="footer__column map-column">
+                     <div class="map-column__title title-column-footer">SITE MAP</div>
+                     <ul class="map-column__list">
+                        <li>
+                           <a href="#">About Us</a>
+                        </li>
+                        <li>
+                           <a href="#">Courses</a>
+                        </li>
+                        <li>
+                           <a href="#">Events</a>
+                        </li>
+                        <li>
+                           <a href="#">Blog</a>
+                        </li>
+                        <li>
+                           <a href="#">Contacts</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- COLUMN-3 -->
+                  <div class="footer__column courses-column">
+                     <div class="courses-column__title title-column-footer">COURSES</div>
+                     <ul class="courses-column__list">
+                        <li>
+                           <a href="#">Marketing</a>
+                        </li>
+                        <li>
+                           <a href="#">Management</a>
+                        </li>
+                        <li>
+                           <a href="#">HR & Recruting</a>
+                        </li>
+                        <li>
+                           <a href="#">Design</a>
+                        </li>
+                        <li>
+                           <a href="#">Development</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- COLUMN-4 -->
+                  <div class="footer__column contacts-column">
+                     <div class="contacts-column__title title-column-footer">CONTACT US</div>
+                     <ul class="contacts-column__list">
+                        <li class="contacts-column__tel">
+                           <a href="tel:4055550128">(405) 555-0128</a>
+                        </li>
+                        <li class="contacts-column__email">
+                           <a href="mailto:hello@createx.com">hello@createx.com</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- COLUMN-5 -->
+                  <div class="footer__column subscribe-column">
+                     <div class="subscribe-column__title title-column-footer">SIGN UP TO OUR NEWSLETTER</div>
+                     <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" class="subscribe-column__form">
+                        <div class="subscribe-column__input">
+                           <input type="hidden" name="appointment" value="subscribe">
+                           <input type="email" name="Email" autocomplete="off" required placeholder="Email address">
+                        </div>
+                        <button type="submit" class="subscribe-column__button icon-arrow"></button>
+                     </form>
+                     <p class="subscribe-column__info">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- BOTTOM LINE -->
+            <div class="footer__footer">
+               <div class="footer__container">
+                  <div class="footer__bottom-line">
+                     <div class="footer__copy">© All rights reserved. Made with <span class="icon-heart"></span> by Createx Studio </div>
+                     <a href="#top" class="footer__go-top">GO TO TOP</a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>

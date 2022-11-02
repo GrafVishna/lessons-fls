@@ -1,0 +1,122 @@
+/*--------- Підключення шрифтів ---------------- */
+
+@font-face {
+   font-family: 'icomoon';
+   src: url('../fonts/icomoon.woff?qlylms') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+   font-family: 'icomoon' !important;
+   font-weight: normal;
+   speak: never;
+   font-style: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   font-size: inherit;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+   content: "\e900";
+}
+
+.icon-iphone:before {
+   content: "\e901";
+}
+
+.icon-chat:before {
+   content: "\e902";
+}
+
+.icon-like:before {
+   content: "\e903";
+}
+
+.icon-star:before {
+   content: "\e904";
+}
+
+.icon-layouts:before {
+   content: "\e905";
+}
+
+.icon-chat1:before {
+   content: "\e906";
+}
+
+.icon-braces:before {
+   content: "\e907";
+}
+
+.icon-calendar:before {
+   content: "\e908";
+}
+
+.icon-clock:before {
+   content: "\e909";
+}
+
+.icon-files:before {
+   content: "\e90a";
+}
+
+.icon-heart:before {
+   content: "\e90b";
+}
+
+.icon-facebook:before {
+   content: "\e90c";
+}
+
+.icon-arrow:before {
+   content: "\e90d";
+}
+
+.icon-linked:before {
+   content: "\e90e";
+}
+
+.icon-instagram:before {
+   content: "\e90f";
+}
+
+.icon-list:before {
+   content: "\e910";
+}
+
+.icon-mic:before {
+   content: "\e911";
+}
+
+.icon-play:before {
+   content: "\e912";
+}
+
+.icon-polygon:before {
+   content: "\e913";
+}
+
+.icon-profile:before {
+   content: "\e914";
+}
+
+.icon-telegram:before {
+   content: "\e915";
+}
+
+.icon-twitter:before {
+   content: "\e917";
+}
+
+.icon-youtube:before {
+   content: "\ea9d";
+}
+
+.icon-map:before {
+   content: "\e916";
+}
