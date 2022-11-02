@@ -249,3 +249,7 @@
 .message__button {
    flex: 0 0 50%;
 }
+
+.message__button span {
+   padding: 16.5px 40px;
+}
