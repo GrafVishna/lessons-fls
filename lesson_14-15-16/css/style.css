@@ -1076,12 +1076,12 @@
    border-radius: 4px;
 }
 
-.slider-reviews__slide-body {
+.slider-reviews__slide-wrapper {
    display: flex;
    column-gap: 30px;
 }
 
-.slider-reviews__slide-body::before {
+.slider-reviews__slide-wrapper::before {
    font-size: 28px;
    color: #FF3F3A;
 }
