@@ -14,39 +14,45 @@
    <body>
       <div class="wrapper">
          <!-- ! header =========================================================== -->
-         <header class="header header--contacts">
+         <header class="header">
+            <input type="checkbox" id="menu-input" class="header__menu-input">
             <div class="header__container">
                <div class="header__wrapper">
                   <div class="header__logo">
                      <img src="img/icons/logo.svg" alt="Logo">
                   </div>
-                  <nav class="header__menu menu">
-                     <ul class="menu__links">
-                        <li>
-                           <a href="#">About Us</a>
-                        </li>
-                        <li>
-                           <a href="#">Courses</a>
-                        </li>
-                        <li>
-                           <a href="#">Events</a>
-                        </li>
-                        <li>
-                           <a href="#">Blog</a>
-                        </li>
-                        <li>
-                           <a href="#">Contacts</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <div class="header__buttons">
-                     <a href="#" class="header__button btn-color"><span>Get consultation</span></a>
-                     <div class="header__log-reg">
-                        <a href="#" class="header__login icon-profile">Log in</a>
-                        <span>/</span>
-                        <a href="#" class="header__register">Register</a>
+                  <div class="header__hidden">
+                     <nav class="header__menu menu">
+                        <ul class="menu__links">
+                           <li>
+                              <a href="#">About Us</a>
+                           </li>
+                           <li>
+                              <a href="#">Courses</a>
+                           </li>
+                           <li>
+                              <a href="#">Events</a>
+                           </li>
+                           <li>
+                              <a href="#">Blog</a>
+                           </li>
+                           <li>
+                              <a target="_blank" href="contact.html">Contacts</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="header__buttons">
+                        <a href="#" class="header__button btn-color"><span>Get consultation</span></a>
+                        <div class="header__log-reg">
+                           <a href="#" class="header__login icon-profile">Log in</a>
+                           <span>/</span>
+                           <a href="#" class="header__register">Register</a>
+                        </div>
                      </div>
                   </div>
+                  <label for="menu-input" class="menu-btn">
+                     <div class="menu-btn__burger"></div>
+                  </label>
                </div>
             </div>
          </header>
