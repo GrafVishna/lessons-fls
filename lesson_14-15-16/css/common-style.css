@@ -698,6 +698,16 @@ body {
    font-size: 10px;
 }
 
+@media (max-width: 768px) {
+   .logo-column {
+      flex: 1 1 100%;
+   }
+
+   .subscribe-column {
+      flex: 1 1 100%;
+   }
+}
+
 /* ? BOTTOM LINE */
 
 .footer__footer {
