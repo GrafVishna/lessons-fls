@@ -740,7 +740,7 @@ body {
 }
 
 .footer__go-top {
-   white: nowrap;
+   white-space: nowrap;
    flex: 1 1 auto;
    text-align: right;
 }
