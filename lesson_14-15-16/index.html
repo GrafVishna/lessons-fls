@@ -8,45 +8,52 @@
       <link rel="stylesheet" href="css/fonts.css">
       <link rel="stylesheet" href="css/common-style.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
       <script src="js/app.js"></script>
-      <title>Lesson 14-15</title>
+      <title>Lesson 14-15-16-17</title>
    </head>
    <body>
       <div class="wrapper">
          <!-- ! header =========================================================== -->
          <header class="header">
+            <input type="checkbox" id="menu-input" class="header__menu-input">
             <div class="header__container">
                <div class="header__wrapper">
                   <div class="header__logo">
                      <img src="img/icons/logo.svg" alt="Logo">
                   </div>
-                  <nav class="header__menu menu">
-                     <ul class="menu__links">
-                        <li>
-                           <a href="#">About Us</a>
-                        </li>
-                        <li>
-                           <a href="#">Courses</a>
-                        </li>
-                        <li>
-                           <a href="#">Events</a>
-                        </li>
-                        <li>
-                           <a href="#">Blog</a>
-                        </li>
-                        <li>
-                           <a target="_blank" href="contact.html">Contacts</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <div class="header__buttons">
-                     <a href="#" class="header__button btn-color"><span>Get consultation</span></a>
-                     <div class="header__log-reg">
-                        <a href="#" class="header__login icon-profile">Log in</a>
-                        <span>/</span>
-                        <a href="#" class="header__register">Register</a>
+                  <div class="header__hidden">
+                     <nav class="header__menu menu">
+                        <ul class="menu__links">
+                           <li>
+                              <a href="#">About Us</a>
+                           </li>
+                           <li>
+                              <a href="#">Courses</a>
+                           </li>
+                           <li>
+                              <a href="#">Events</a>
+                           </li>
+                           <li>
+                              <a href="#">Blog</a>
+                           </li>
+                           <li>
+                              <a target="_blank" href="contact.html">Contacts</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="header__buttons">
+                        <a href="#" class="header__button btn-color"><span>Get consultation</span></a>
+                        <div class="header__log-reg">
+                           <a href="#" class="header__login icon-profile">Log in</a>
+                           <span>/</span>
+                           <a href="#" class="header__register">Register</a>
+                        </div>
                      </div>
                   </div>
+                  <label for="menu-input" class="menu-btn">
+                     <div class="menu-btn__burger"></div>
+                  </label>
                </div>
             </div>
          </header>
@@ -119,11 +126,6 @@
                <span class="answers__decor answers__decor--2"></span>
                <div class="answers__container">
                   <div class="answers__wrapper">
-                     <div class="answers__picture-column">
-                        <div class="answers__image">
-                           <img src="img/other/image.jpg" alt="Image">
-                        </div>
-                     </div>
                      <div class="answers__content-column">
                         <div class="answers__text-wrapper">
                            <div class="answers__title-block block-title">
@@ -139,6 +141,12 @@
                               <li class="answers__item-list icon-list">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                            </ul>
                            <a href="#" class="answers__button btn-color"><span>More about us</span></a>
+                        </div>
+                     </div>
+                     <!-- === -->
+                     <div class="answers__picture-column">
+                        <div class="answers__image">
+                           <img src="img/other/image.jpg" alt="Image">
                         </div>
                      </div>
                   </div>
@@ -585,7 +593,7 @@
                         <div class="label">Our blog</div>
                         <h2 class="title">Latest posts</h2>
                      </div>
-                     <div class="blog__button btn-color"><span>Go to blog</span></div>
+                     <a href="#" class="blog__button btn-color"><span>Go to blog</span></a>
                   </div>
                   <div class="blog__cards cards-blog">
                      <!-- CARD BLOG-1 -->

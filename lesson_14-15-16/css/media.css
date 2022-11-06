@@ -1,0 +1,501 @@
+@media (max-width: 991px) {
+   .main {
+      position: relative;
+      padding: 100px 0 60px 0;
+   }
+
+   .main__title {
+      font-size: 50px;
+   }
+
+   .main__title:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .answers__list:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   .answers__title-block:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   .main__wrapper:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   .main:not(:last-child) {
+      margin-bottom: 100px;
+   }
+
+   .answers:not(:last-child) {
+      margin-bottom: 100px;
+   }
+
+   /* === */
+
+   .card-courses__content {
+      padding: 15px;
+      row-gap: 10px;
+   }
+
+   .card-courses__activity {
+      font-size: 18px;
+   }
+
+   /* === */
+
+   .courses:not(:last-child) {
+      margin-bottom: 100px;
+   }
+
+   /* === */
+   .benefits {
+      padding-bottom: 100px;
+   }
+
+   /* === */
+
+   .item-workshops {
+      padding: 20px 20px;
+      column-gap: 20px;
+   }
+
+   /* === */
+   .certificate {
+      padding-top: 100px;
+   }
+
+   /* === */
+   .team {
+      padding-bottom: 80px;
+      padding-top: 80px;
+   }
+
+   .team__header {
+      margin-bottom: 40px;
+   }
+
+   /* === */
+
+   .slider-reviews__wrapper {
+      padding: 0 60px;
+   }
+
+   .slider-reviews__slide {
+      padding: 40px 60px;
+   }
+
+   .reviews {
+      padding-bottom: 50px;
+   }
+
+   .reviews:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   /* === */
+   .blog {
+      margin-bottom: 100px;
+   }
+
+   .cards-blog__card {
+      flex: 0 0 50%;
+   }
+
+   /* === */
+   .subscribe {
+      padding: 100px 0 150px 0;
+   }
+
+   .subscribe__decor {
+      max-width: 254px;
+   }
+
+   .slider__image::before {
+      transform: translatey(0);
+   }
+
+   .slider__social {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 0.5s ease 0.3s;
+   }
+
+}
+
+@media (max-width: 820px) {
+   .main__line-play {
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 15px;
+   }
+
+   .main__title {
+      font-size: 40px;
+   }
+
+   .main__wrapper {
+      display: block;
+   }
+
+   .main__wrapper-content {
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .main__content {
+      padding: 0;
+   }
+
+   .main__content:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   .main__wraper-image {
+      transform: none;
+      margin: 0 auto;
+   }
+
+   /* === */
+
+   .courses__card {
+      flex: 0 0 100%;
+      /* min-width: 400px; */
+      padding: 0 15px;
+   }
+
+   .card-courses__picture {
+      padding-bottom: 40%;
+   }
+
+   /* === */
+
+   .certificate {
+      padding: 60px 0;
+   }
+
+   .certificate__content {
+      padding-bottom: 0;
+   }
+
+   /* === */
+   .team {
+      margin-top: 0;
+   }
+
+   .slider__slide:nth-child(4) {
+      display: none;
+   }
+}
+
+@media (max-width: 768px) {
+   .footer-main {
+      flex-wrap: wrap;
+      column-gap: 0;
+   }
+
+   .footer-main__column {
+      flex: 0 0 50%;
+      padding: 10px;
+      justify-content: center;
+   }
+
+   .footer-main>span {
+      display: none;
+   }
+
+   /* === */
+
+   .answers__wrapper {
+      display: block;
+   }
+
+   .answers__content-column:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   .answers__content-column {
+      min-width: 0px;
+   }
+
+   .main:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   .answers:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   /* === */
+
+   .courses:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   .courses__header {
+      margin-bottom: 40px;
+   }
+
+   /* === */
+
+   .benefits__title-block:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .tabs__buttons {
+      margin-bottom: 40px;
+   }
+
+   .tabs-tutors:checked~.tabs__cards .tabs__card--tutors,
+   .tabs-support:checked~.tabs__cards .tabs__card--support,
+   .tabs-library:checked~.tabs__cards .tabs__card--library,
+   .tabs-community:checked~.tabs__cards .tabs__card--community {
+      display: block;
+   }
+
+   .tabs__title {
+      font-size: 28px;
+   }
+
+   .tabs__text-column {
+      max-width: 100%;
+      margin-bottom: 40px;
+   }
+
+   /* === */
+   .benefits {
+      padding-bottom: 50px;
+   }
+
+   /* === */
+   .workshops {
+      padding: 50px 0;
+   }
+
+   .workshops__title-block {
+      margin-bottom: 40px;
+   }
+
+   .item-workshops {
+      padding: 20px 20px;
+   }
+
+   .item-workshops__date {
+      flex-wrap: wrap;
+   }
+
+   /* === */
+   .workshops__items:not(:last-child) {
+      margin-bottom: 60px;
+   }
+
+   /* === */
+   .certificate__wrapper {
+      display: block;
+      text-align: center;
+   }
+
+   .certificate__title-block:not(:last-child) {
+      max-width: 350px;
+      margin: 0 auto 20px auto;
+      text-align: center;
+   }
+
+   .certificate__info:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .certificate__icons {
+      justify-content: space-around;
+   }
+
+   .certificate__content:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   /* === */
+   .team {
+      padding-bottom: 50px;
+      padding-top: 50px;
+   }
+
+   .team__header {
+      margin-bottom: 10px;
+   }
+
+   /* === */
+
+   .slider-reviews__slide {
+      padding: 30px 40px;
+   }
+
+   .reviews {
+      padding-bottom: 40px;
+   }
+
+   .reviews:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .slider-reviews__wrapper {
+      margin-bottom: 40px;
+   }
+
+   .slider-reviews__slide-wrapper {
+      column-gap: 15px;
+   }
+
+   .slider-reviews__text {
+      font-size: 18px;
+   }
+
+   /* === */
+
+   .blog {
+      margin-bottom: 60px;
+   }
+
+   .cards-blog {
+      margin: 0;
+   }
+
+   .cards-blog__card {
+      flex: 0 0 100%;
+      padding: 0;
+   }
+
+   .cards-blog__content {
+      padding: 0 15px 15px 15px;
+   }
+
+   .blog__header {
+      margin-bottom: 40px;
+   }
+
+   /* === */
+   .subscribe {
+      padding: 80px 0 100px 0;
+   }
+
+   .subscribe__decor {
+      max-width: 154px;
+   }
+
+   /* === */
+   .logo-column {
+      flex: 1 1 100%;
+   }
+
+   .subscribe-column {
+      flex: 1 1 100%;
+   }
+}
+
+@media (max-width: 580px) {
+   .footer-main__column {
+      flex: 0 0 100%;
+      justify-content: center;
+   }
+
+   .footer-main>span {
+      display: none;
+   }
+
+   .main {
+      position: relative;
+      padding: 100px 0 40px 0;
+   }
+
+   /* === */
+   .item-workshops {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .slider__slide:nth-child(3) {
+      display: none;
+   }
+
+   /* === */
+   .slider-reviews__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 15px;
+      margin-bottom: 15px;
+      padding: 0;
+
+   }
+
+   .slider-reviews__controls {
+      position: static;
+      transform: translateY(0);
+      justify-content: center;
+   }
+
+   /* === */
+   .blog {
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 460px) {
+   .card-courses__wraper {
+      display: block;
+      min-width: 200px;
+   }
+
+   .card-courses {
+      min-width: 100%;
+   }
+
+   .card-courses__picture {
+      padding-bottom: 100%;
+   }
+
+   .item-workshops__title {
+      font-size: 18px;
+   }
+
+   .slider-reviews__slide {
+      padding: 30px 30px;
+   }
+
+   .reviews__title-block:not(:last-child) {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 420px) {
+   .main__buttons-line {
+      flex-direction: column;
+      row-gap: 15px;
+      width: 100%;
+   }
+
+   .btn-transparent,
+   .btn-color,
+   .btn-transparent span,
+   .btn-color span {
+      display: block;
+      width: 100%;
+   }
+
+   .workshops__items:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .item-workshops__button-wrapper {
+      width: 100%;
+   }
+
+   /* === */
+   .slider__slide:nth-child(2) {
+      display: none;
+   }
+
+   /* === */
+   .slider-reviews__slide-wrapper::before {
+      display: none;
+   }
+}
