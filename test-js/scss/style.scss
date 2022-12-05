@@ -1,0 +1,232 @@
+body {
+   background-color: #000;
+}
+.wrapper {
+}
+.page {
+   flex: 1 1 auto;
+   padding: 50px 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+//========================================================================================================================================================
+.header {
+   padding: 20px 0;
+   text-align: center;
+   color: #fff;
+   font-size: 20px;
+   background-color: rgba(119, 119, 119, 0.274);
+   letter-spacing: 2px;
+}
+//========================================================================================================================================================
+
+.test {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   // .test__wrapper
+
+   &__wrapper {
+   }
+
+   // .test__buttons
+
+   &__buttons {
+      --color-red: rgb(255, 0, 0);
+      --color-white: rgb(255, 255, 255);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      & > span {
+         position: absolute;
+         top: 0;
+         left: 0;
+         transform: translateX(-100%);
+         height: 100%;
+         background-color: #fff;
+         z-index: 1;
+         opacity: 0;
+         transition: all 0.5s cubic-bezier(0.6, -0.26, 0.35, 1.38);
+         &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: flicker 2s linear infinite;
+         }
+      }
+   }
+
+   // .test__button
+
+   &__button {
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 3px;
+      transition: all 0.5s ease;
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0);
+      &:hover {
+         border: 1px solid #fff;
+      }
+      &.active {
+         color: #000;
+      }
+   }
+}
+
+$opacityAnim: 0.4;
+
+@keyframes flicker {
+   0% {
+      opacity: 0;
+   }
+   10% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   10.1% {
+      opacity: $opacityAnim;
+      box-shadow: none;
+   }
+   10.2% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   20% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   20.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+   }
+   20.6% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   30% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   30.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+   }
+   30.5% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+   }
+   30.6% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   45% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   45.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+   }
+   50% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+   }
+   55% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+   }
+   55.1% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   57% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   57.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3);
+   }
+   60% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3);
+   }
+   60.1% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   65% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   65.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3),
+         0 0 100px rgba(255, 255, 255, 0.1);
+   }
+   75% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3),
+         0 0 100px rgba(255, 255, 255, 0.1);
+   }
+   75.1% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   77% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   77.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4),
+         0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+   }
+   85% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4),
+         0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+   }
+   85.1% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   86% {
+      opacity: 0;
+      box-shadow: none;
+   }
+   86.1% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45),
+         0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+   }
+   100% {
+      opacity: $opacityAnim;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45),
+         0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+   }
+}
+
+//========================================================================================================================================================
+.footer {
+   padding: 20px 0;
+   text-align: center;
+   color: #fff;
+   font-size: 20px;
+   background-color: rgba(119, 119, 119, 0.212);
+   letter-spacing: 2px;
+}
