@@ -7,17 +7,6 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 50px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .header {
@@ -29,16 +18,9 @@ body {
   letter-spacing: 2px;
 }
 
-.test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.test__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .test__buttons {
   --color-red: rgb(255, 0, 0);
@@ -50,10 +32,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
+  max-width: 100%;
 }
 .test__buttons > span {
   position: absolute;
@@ -81,7 +61,8 @@ body {
           animation: flicker 2s linear infinite;
 }
 .test__button {
-  padding: 15px 40px;
+  padding: 5px 10px;
+  min-height: 60px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
@@ -90,6 +71,9 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.666%;
+          flex: 0 0 16.666%;
   z-index: 2;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -99,6 +83,10 @@ body {
 }
 .test__button.active {
   color: #000;
+}
+
+.button {
+  color: #fff;
 }
 
 @-webkit-keyframes flicker {

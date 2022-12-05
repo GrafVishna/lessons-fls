@@ -6,11 +6,6 @@ body {
 .page {
    flex: 1 1 auto;
    padding: 50px 15px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   max-width: 1400px;
-   margin: 0 auto;
 }
 //========================================================================================================================================================
 .header {
@@ -24,12 +19,11 @@ body {
 //========================================================================================================================================================
 
 .test {
-   display: flex;
-   align-items: center;
-   justify-content: center;
    // .test__wrapper
 
    &__wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
    }
 
    // .test__buttons
@@ -40,8 +34,9 @@ body {
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+
       margin-bottom: 50px;
+      max-width: 100%;
 
       & > span {
          position: absolute;
@@ -68,13 +63,15 @@ body {
    // .test__button
 
    &__button {
-      padding: 15px 40px;
+      padding: 5px 10px;
+      min-height: 60px;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 20px;
       letter-spacing: 3px;
       transition: all 0.5s ease;
       position: relative;
+      flex: 0 0 16.666%;
       z-index: 2;
       color: #fff;
       border: 1px solid rgba(255, 255, 255, 0);
@@ -86,7 +83,9 @@ body {
       }
    }
 }
-
+.button {
+   color: #fff;
+}
 $opacityAnim: 0.4;
 
 @keyframes flicker {
