@@ -8,9 +8,8 @@ function buttonClick(event) {
    console.log(targetItem);
    if (targetItem.closest(".test__button")) {
       buttons.forEach(((button, index) => {
-         let buttonActive = event.target;
          buttonsLine.style.width = `calc(100% / ${index + 1})`;
-         if (button == buttonActive.closest('.test__button')) {
+         if (button == targetItem.closest('.test__button')) {
             button.classList.add("active");
             buttonsLine.classList.add("active");
             buttonsLine.style.transform = `translateX(calc(${index} * 100%))`;
